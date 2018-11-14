@@ -1,0 +1,49 @@
+body{
+  background-image: url('../image/cafe.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  font-family: 'Montserrat';
+}
+
+label{
+  color: white;
+}
+
+h2{
+  color: white;
+}
+
+h4{
+  color: white;
+}
+
+.container1{
+  margin: 0 auto;
+}
+.container1 .needs-validation{
+  width: 650px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-control {
+  border-radius: 50px;
+}
+#username{
+  border-radius: 0px 50px 50px 0px  ;
+
+}
+
+.input-group-text{
+border-radius:  50px;
+}
+
+.skill{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}

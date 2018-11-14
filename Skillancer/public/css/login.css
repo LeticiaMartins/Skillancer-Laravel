@@ -1,0 +1,116 @@
+html,
+body {
+  height: 100%;
+}
+
+
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("../image/cafe.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.btn.btn-lg.btn-info.btn-block{
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.badge.badge-info{
+  background: none;
+}
+
+.badge.badge-info:hover,
+.badge.badge-info:active,
+.badge.badge-info:focus{
+  background-color:transparent !important;
+
+}
+label{
+  color: white;
+}
+
+/*
+input[type="checkbox"]{
+  position: relative;
+  /* display: none; */
+}
+/*
+input[type="checkbox"]:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  margin-right: 15px;
+}
+input[type="checkbox"]:after{
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #555;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: inline-block;
+}*/
