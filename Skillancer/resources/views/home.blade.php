@@ -23,11 +23,7 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/agency.css">
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 94077549924004f2de255cafc9bc3a87e9d2a244
     <style>
 
     img.logo{
@@ -91,7 +87,7 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
             </li>
-<<<<<<< HEAD
+
             @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">LOGIN</a>
@@ -120,17 +116,7 @@
                     </div>
                 </li>
             @endguest
-=======
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href='/faq'>perguntas frequentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cadastro.php">cadastre-se</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.php">login</a>
-            </li>
->>>>>>> 94077549924004f2de255cafc9bc3a87e9d2a244
+
           </ul>
         </div>
       </div>
@@ -196,11 +182,7 @@
             </div>
 
           </div>
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 94077549924004f2de255cafc9bc3a87e9d2a244
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -210,11 +192,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 94077549924004f2de255cafc9bc3a87e9d2a244
         <br>
         <br>
         <div class="row text-center">
@@ -299,11 +277,7 @@
               <p class="text-muted">"Fui ali gostar de mim e acabei ficando" - frase de Ana Avila</p>
             </div>
           </div>
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 94077549924004f2de255cafc9bc3a87e9d2a244
           <div class="row">
             <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">nosso time</h2>
@@ -544,11 +518,6 @@
               </ul>
             </div>
           </div>
-<<<<<<< HEAD
-       
-=======
-
->>>>>>> 94077549924004f2de255cafc9bc3a87e9d2a244
       </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -676,11 +645,7 @@
     <!-- Portfolio Modals -->
 
     <!-- Modal 1 -->
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 94077549924004f2de255cafc9bc3a87e9d2a244
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -756,11 +721,8 @@
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     FECHAR</button>
-<<<<<<< HEAD
-                  </div> 
-=======
                   </div>
->>>>>>> 94077549924004f2de255cafc9bc3a87e9d2a244
+                  </div>
                 </div>
               </div>
             </div>
