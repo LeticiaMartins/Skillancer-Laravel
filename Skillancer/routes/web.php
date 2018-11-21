@@ -15,8 +15,30 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/perfildev', 'PerfilController@perfildev');
+Route::get('/perfildev/{id}', 'PerfilController@perfilDevId');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Id porque como é um especifico que exibe ele vem de alguma pesquisa
+
+Route::get('/perfildev/todos', 'PerfilController@exibirTodosPerfilDev');
+Route::get('/perfildev/adicionar', 'PerfilController@criarPerfilDev');
+Route::post('/perfildev/adicionar', 'PerfilController@adicionarPerfilDev');
+Route::get('/perfildev/editar', 'PerfilController@editarPerfilDev');
+Route::put('/perfildev/editar', 'PerfilController@receberAlteracoesDev');
+Route::get('/perfildev/deletar', 'PerfilController@deletarDev');
+Route::delete('/perfildev/deletar', 'PerfilController@deletarPerfilDev');
+
+Route::get('/faq', 'FaqControler@faqGeral');
+
+Route::get('/projetos', 'ProjetoController@exibirTodosProjetos');
+Route::get('/projeto/{id}', 'ProjetoController@progetoId');
+Route::get('/projeto/adicionar', 'ProjetoController@criarProjeto');
+Route::post('/projeto/adicionar', 'ProjetoController@adicionarProjeto');
+Route::get('/projeto/editar', 'ProjetoController@editarProjeto');
+Route::put('/projeto/editar', 'ProjetoController@receberAlteracoes');
+Route::get('/projeto/deletar', 'ProjetoController@deletar');
+Route::delete('/projeto/deletar', 'ProjetoController@deletarProjeto');
+
