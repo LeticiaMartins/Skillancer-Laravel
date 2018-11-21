@@ -31,7 +31,7 @@ Route::put('/perfildev/editar', 'PerfilController@receberAlteracoesDev');
 Route::get('/perfildev/deletar', 'PerfilController@deletarDev');
 Route::delete('/perfildev/deletar', 'PerfilController@deletarPerfilDev');
 
-Route::get('/faq', 'FaqControler@faqGeral');
+Route::get('/faq', 'FaqController@faqGeral');
 
 Route::get('/projetos', 'ProjetoController@exibirTodosProjetos');
 Route::get('/projeto/{id}', 'ProjetoController@progetoId');
