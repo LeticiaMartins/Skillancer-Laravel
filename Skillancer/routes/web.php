@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/perfildev', 'PerfilController@perfildev');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
