@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PerfilController extends Controller
 {
-    public function perfildev(){
-      return view("perfildev"); 
+    public function perfilDev(){
+      return view("perfildev");
     }
 }
