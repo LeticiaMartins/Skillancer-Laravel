@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/perfildev/{id}', 'PerfilController@perfilDevId');
+Route::get('/perfildev', 'PerfilController@perfilDev');
 
 Auth::routes();
 
@@ -41,4 +41,3 @@ Route::get('/projeto/editar', 'ProjetoController@editarProjeto');
 Route::put('/projeto/editar', 'ProjetoController@receberAlteracoes');
 Route::get('/projeto/deletar', 'ProjetoController@deletar');
 Route::delete('/projeto/deletar', 'ProjetoController@deletarProjeto');
-
