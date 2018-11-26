@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Projeto;
 
@@ -23,7 +24,7 @@ class ProjetoController extends Controller
 
  public function adicionarProjeto(Request $request) {
     $request->validate([
-     'titulo' => 'unique:projeto,projeto_id|max:200'
+     'titulo' => 'unique:projeto,id_projeto|max:200'
     ]);
 
     $projeto = Projeto::create([
@@ -32,14 +33,14 @@ class ProjetoController extends Controller
       'descricao'=> $request->input('descricao'),
       'fk_id_freelancer'=> $request->input('fk_id_freelancer'),
       'fk_idPagamento'=> $request->input('fk_idPagamento'),
-      'fk_idUser'=> $request->input('fk_idUser')
+      'fk_idUser'=> Auth::id()
     ]);
 
     $projeto->save();
       return redirect('/projeto_todos');
     }
 
-  public function editar($id) {
+  public function editarProjeto($id) {
     $projeto = Projeto::find($id);
     return view('projeto_editar')->with('projeto', $projeto);
   }
