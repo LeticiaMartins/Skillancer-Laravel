@@ -21,8 +21,8 @@
           (atualizado {{ $projeto->updated_at->diffForHuman() }})
         @endif
 
-        <a href= "/projeto/editar/{{ $projeto->projeto_id }}">Editar</a>
-        <a href= "/projeto/deletar/{{ $projeto->projeto_id }}">Deletar</a>
+        <a href= "/projeto/editar/{{ $projeto->id_projeto }}">Editar</a>
+        <a href= "/projeto/deletar/{{ $projeto->id_projeto }}">Deletar</a>
       </li>
       @endforeach
     </ul>

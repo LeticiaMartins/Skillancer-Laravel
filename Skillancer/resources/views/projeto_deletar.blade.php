@@ -17,8 +17,8 @@
         {{ csrf_field() }}
         {{ method_field('DELETE') }}
 
-        <label>Nome do Projeto</label>
-        <input type="text" name="nome" value="{{ $projeto->nome }}" readonly>
+        <b>Nome do Projeto</b>
+        <p>{{ $projeto->titulo }}</p>
 
         <button type="submit">Deletar</button>
 

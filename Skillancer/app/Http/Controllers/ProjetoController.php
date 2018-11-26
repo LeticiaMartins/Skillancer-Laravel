@@ -62,7 +62,7 @@ class ProjetoController extends Controller
     return view('projeto_deletar')->with('projeto', $projeto);
   }
 
-  public function excluirProjeto(){
+  public function excluirProjeto($id){
     $projeto = Projeto::find($id);
     $projeto->delete();
 

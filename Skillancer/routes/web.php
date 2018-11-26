@@ -38,6 +38,6 @@ Route::get('/projeto/adicionar', 'ProjetoController@criarProjeto');
 Route::post('/projeto/adicionar', 'ProjetoController@adicionarProjeto');
 Route::get('/projeto/editar/{id}', 'ProjetoController@editarProjeto');
 Route::put('/projeto/editar/{id}', 'ProjetoController@receberAlteracoes');
-Route::get('/projeto/deletar', 'ProjetoController@deletar');
-Route::delete('/projeto/deletar', 'ProjetoController@deletarProjeto');
+Route::get('/projeto/deletar/{id}', 'ProjetoController@excluir');
+Route::delete('/projeto/deletar/{id}', 'ProjetoController@excluirProjeto');
 Route::get('/projeto/{id}', 'ProjetoController@exibirProjeto');
