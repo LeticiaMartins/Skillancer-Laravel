@@ -12,7 +12,7 @@
 
       <h1>Deletar Projeto</h1>
 
-      <form action="/projeto/deletar/{{ $projeto->projeto_id }}" method="POST">
+      <form action="/projeto/deletar/{{ $projeto->id_projeto }}" method="POST">
 
         {{ csrf_field() }}
         {{ method_field('DELETE') }}

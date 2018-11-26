@@ -16,7 +16,7 @@
   <ul class= "lis-group" >
     @foreach ($listaDeProjetos as $projeto)
       <li class= "list-group-item">
-        {{$projeto->nome}}
+        {{$projeto->titulo}}
         @if ($projeto->updated_at)
           (atualizado {{ $projeto->updated_at->diffForHuman() }})
         @endif

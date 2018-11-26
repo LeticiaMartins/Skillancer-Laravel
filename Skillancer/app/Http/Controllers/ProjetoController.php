@@ -7,28 +7,36 @@ use App\Projeto;
 
 class ProjetoController extends Controller
 {
-  public function exibir() {
-    $projetos = Projeto::orderBy('nome')->paginate(10);
+  public function exibirTodosProjetos() {
+    $projetos = Projeto::orderBy('titulo')->paginate(10);
 
-    return view('projetos_todos')->with('listaDeProjetos', $projetos);
+    return view('projeto_todos')->with('listaDeProjetos', $projetos);
   }
 
   public function novo() {
+    return view('projeto_todos');
+  }
+
+  public function criarProjeto(){
     return view('projeto_adicionar');
   }
 
- public function receberdados(Request $request) {
-    $request->input('nome'); //ele chama a variável $request que é do tipo Request
+ public function adicionarProjeto(Request $request) {
     $request->validate([
-     'nome' => 'unique:projeto|max:200'
+     'titulo' => 'unique:projeto,projeto_id|max:200'
     ]);
 
     $projeto = Projeto::create([
-      'nome'=> $request->input('nome')
+      'titulo'=> $request->input('titulo'),
+      'tipo_servico'=> $request->input('tipo_servico'),
+      'descricao'=> $request->input('descricao'),
+      'fk_id_freelancer'=> $request->input('fk_id_freelancer'),
+      'fk_idPagamento'=> $request->input('fk_idPagamento'),
+      'fk_idUser'=> $request->input('fk_idUser')
     ]);
 
     $projeto->save();
-      return redirect('/projeto/exibir');
+      return redirect('/projeto_todos');
     }
 
   public function editar($id) {
@@ -38,14 +46,14 @@ class ProjetoController extends Controller
 
   public function receberAlteracoes(Request $request, $id){
     $request->validate([
-      'nome' => 'required|min:2|max:20|unique:projeto'
+      'titulo' => 'required|min:2|max:20|unique:projeto'
    ]);
 
     $projeto = Projeto::find($id);
-    $projeto->nome = $request->input('nome');
+    $projeto->titulo = $request->input('titulo');
     $projeto->save();
 
-    return redirect('/projeto/exibir');
+    return redirect('/projeto_todos');
   }
 
   public function excluir($id) {
@@ -57,7 +65,10 @@ class ProjetoController extends Controller
     $projeto = Projeto::find($id);
     $projeto->delete();
 
-    return redirect('/projeto/exibir');
+    return redirect('/projeto_todos');
   }
-
+  public function exibirProjeto($id){
+    $projeto = Projeto::find($id);
+    return view('projeto_id')->with('projeto', $projeto);
+  }
 }

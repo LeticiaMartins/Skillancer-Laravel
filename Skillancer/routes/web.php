@@ -33,11 +33,11 @@ Route::delete('/perfildev/deletar', 'PerfilController@deletarPerfilDev');
 
 Route::get('/faq', 'FaqController@faqGeral');
 
-Route::get('/projetos', 'ProjetoController@exibirTodosProjetos');
-Route::get('/projeto/{id}', 'ProjetoController@progetoId');
+Route::get('/projeto_todos', 'ProjetoController@exibirTodosProjetos');
 Route::get('/projeto/adicionar', 'ProjetoController@criarProjeto');
 Route::post('/projeto/adicionar', 'ProjetoController@adicionarProjeto');
 Route::get('/projeto/editar', 'ProjetoController@editarProjeto');
 Route::put('/projeto/editar', 'ProjetoController@receberAlteracoes');
 Route::get('/projeto/deletar', 'ProjetoController@deletar');
 Route::delete('/projeto/deletar', 'ProjetoController@deletarProjeto');
+Route::get('/projeto/{id}', 'ProjetoController@exibirProjeto');

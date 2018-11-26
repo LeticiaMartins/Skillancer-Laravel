@@ -24,7 +24,7 @@
 
       <h1>Editar Projeto</h1>
 
-      <form action="/projeto/editar/{{ $projeto->projeto_id }}" method="POST">
+      <form action="/projeto/editar/{{ $projeto->id_projeto }}" method="POST">
 
         {{ csrf_field() }}
         {{ method_field('PUT') }}
