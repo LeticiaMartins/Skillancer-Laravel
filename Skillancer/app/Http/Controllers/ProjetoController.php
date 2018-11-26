@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Projeto;
 
 class ProjetoController extends Controller
 {
   public function exibir() {
-    $projeto = Projeto::orderBy('nome')->paginate(10);
+    $projetos = Projeto::orderBy('nome')->paginate(10);
 
     return view('projetos_todos')->with('listaDeProjetos', $projetos);
   }
@@ -16,11 +17,11 @@ class ProjetoController extends Controller
     return view('projeto_adicionar');
   }
 
-  // public function receberdados(Request $request) {
-  //   // $request->input('nome');ele chama a variável $request que é do tipo Request
-  //   $request->validate([
-  //     'nome' => 'unique:projeto|max:200'
-  //    ]);
+ public function receberdados(Request $request) {
+    $request->input('nome'); //ele chama a variável $request que é do tipo Request
+    $request->validate([
+     'nome' => 'unique:projeto|max:200'
+    ]);
 
     $projeto = Projeto::create([
       'nome'=> $request->input('nome')
