@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('css-custom', '/css/faq.css')
+@section('css-custom', '/css/projetos.css')
 @section('content')
 
 
