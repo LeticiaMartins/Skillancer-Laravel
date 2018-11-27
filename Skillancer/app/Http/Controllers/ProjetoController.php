@@ -9,7 +9,7 @@ use App\Projeto;
 class ProjetoController extends Controller
 {
   public function exibirTodosProjetos() {
-    $projetos = Projeto::orderBy('titulo')->paginate(10);
+    $projetos = Projeto::orderBy('titulo')->paginate(12);
 
     return view('projeto_todos')->with('listaDeProjetos', $projetos);
   }

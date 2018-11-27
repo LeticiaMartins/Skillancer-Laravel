@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Editar projeto</title>
+@extends('layouts.app')
 
-    <link rel="stylesheet" href="/css/app.css">
-  </head>
+@section('css-custom', '/css/faq.css')
+@section('content')
+
   <body>
     <div class="container">
 
@@ -44,3 +41,4 @@
 
   </body>
 </html>
+@stop

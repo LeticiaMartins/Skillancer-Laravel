@@ -20,7 +20,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $projetos = Projeto::orderBy('titulo')->paginate(10);
+      $projetos = Projeto::orderBy('titulo')->orderBy('id_projeto', 'desc')->take(3)->get();
 
       return view('home')->with('listaDeProjetos', $projetos);
     }

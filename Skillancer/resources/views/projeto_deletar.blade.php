@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Deletar projeto</title>
+@extends('layouts.app')
+
+@section('css-custom', '/css/faq.css')
+@section('content')
+
 
     <link rel="stylesheet" href="/css/app.css">
   </head>
@@ -28,3 +28,4 @@
 
   </body>
 </html>
+@stop

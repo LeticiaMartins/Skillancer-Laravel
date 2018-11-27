@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/app.css" />
-    <title></title>
-  </head>
-  <body>
+@extends('layouts.app')
+
+@section('css-custom', '/css/faq.css')
+@section('content')
 
 
     <div class="container">
@@ -38,5 +34,4 @@
 
         </form>
         </div>
-  </body>
-</html>
+@stop
