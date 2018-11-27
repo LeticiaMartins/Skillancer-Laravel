@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Projeto;
 
 class HomeController extends Controller
 {
@@ -19,6 +20,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      $projetos = Projeto::orderBy('titulo')->paginate(10);
+
+      return view('home')->with('listaDeProjetos', $projetos);
     }
 }

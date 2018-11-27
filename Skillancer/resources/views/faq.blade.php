@@ -90,6 +90,9 @@
               <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="cadastro.php">cadastre-se</a>
             </li>
             <li class="nav-item">
@@ -282,6 +285,7 @@
               <!--  -->
             </div>
           </div>
+  
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

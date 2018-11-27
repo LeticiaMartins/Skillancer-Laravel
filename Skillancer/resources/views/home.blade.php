@@ -87,6 +87,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
+            </li>
             @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">LOGIN</a>
@@ -227,53 +230,30 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">projetos em fase de construção</h2>
-            <h3 class="section-subheading text-muted">três projetos, três propostas diferentes, veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolverorxs ideal para você</h3>
+            <h3 class="section-subheading text-muted">três projetos, três propostas diferentes, veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolvedor ideal para você</h3>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/camisas.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>por outro ângulo</h4>
-              <p class="text-muted">E-commerce de vestuário masculino para quem está longe de ser social</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
+          @foreach ($listaDeProjetos as $projeto)
+              <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/camisas.jpg" alt="">
+                </a>
+                <div class="portfolio-caption">
+                  <h4>{{$projeto->titulo}}</h4>
+                  @if ($projeto->updated_at)
+                    <small>(atualizado {{ $projeto->updated_at->diffForHuman() }})</small>
+                  @endif
+                  <p class="text-muted">{{$projeto->descricao}}</p>
                 </div>
               </div>
-              <img class="img-fluid" src="img/pets.png" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>quem é o docinho?</h4>
-              <p class="text-muted">Doceria pet friendly que capta recursos para pets em situação vulnerável</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/buquet.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>sem casório</h4>
-              <p class="text-muted">"Fui ali gostar de mim e acabei ficando" - frase de Ana Avila</p>
-            </div>
-          </div>
+            @endforeach
           <div class="row">
             <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">nosso time</h2>
