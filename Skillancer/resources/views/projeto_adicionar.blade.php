@@ -27,10 +27,13 @@
 
         {{-- csrf field --}}
         @csrf
-        @method('POST')
 
         <label>Nome do Projeto</label>
-        <input type="text" name="nome">
+        <input type="text" name="titulo"><br>
+        <label>Tipo de Serviço</label>
+        <input type="text" name="tipo_servico"><br>
+        <label>Descrição</label>
+        <input type="text" name="descricao"><br>
         <button type="submit">Enviar</button>
 
         </form>

@@ -16,13 +16,13 @@
   <ul class= "lis-group" >
     @foreach ($listaDeProjetos as $projeto)
       <li class= "list-group-item">
-        {{$projeto->nome}}
+        {{$projeto->titulo}}
         @if ($projeto->updated_at)
           (atualizado {{ $projeto->updated_at->diffForHuman() }})
         @endif
 
-        <a href= "/projeto/editar/{{ $projeto->projeto_id }}">Editar</a>
-        <a href= "/projeto/deletar/{{ $projeto->projeto_id }}">Deletar</a>
+        <a href= "/projeto/editar/{{ $projeto->id_projeto }}">Editar</a>
+        <a href= "/projeto/deletar/{{ $projeto->id_projeto }}">Deletar</a>
       </li>
       @endforeach
     </ul>

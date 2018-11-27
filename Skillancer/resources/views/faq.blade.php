@@ -90,6 +90,9 @@
               <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="cadastro.php">cadastre-se</a>
             </li>
             <li class="nav-item">
@@ -107,7 +110,6 @@
           <!-- <div class= "logo-capa"><img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div> -->
           <div class="intro-lead-in">Skillancers<img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div>
           <div class="intro-heading text-uppercase">O FREELA IDEAL PARA VOCE</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Cadastre-se</a>
         </div>
       </div>
     </header>
@@ -283,6 +285,7 @@
               <!--  -->
             </div>
           </div>
+  
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

@@ -20,7 +20,7 @@
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/perfil_dev.min.css" rel="stylesheet">
+    <link href="/css/perfil_dev_original.css" rel="stylesheet">
 
   </head>
 

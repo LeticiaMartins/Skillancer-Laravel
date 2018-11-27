@@ -4,26 +4,26 @@
 		<meta charset="utf-8">
 		<title>Login Skillancers</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 		<!-- MATERIAL DESIGN ICONIC FONT -->
 		<link rel="stylesheet" href="/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="/css/style.css">
 		<!-- GOOGLE FONTS -->
-		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 
 		<style>
-		
+
 		.logo{
-			position: fixed;
+
 			margin-bottom:550px;
 			margin-left: 140px;
 		}
 
 		h1{
 			position: fixed;
-			font-family: "Kaushan Script", cursive; 
+			font-family: "Kaushan Script", cursive;
 			color: #fcf7eb;
 			text-decoration: none;
 			font-weight: 700;
@@ -31,7 +31,7 @@
 			letter-spacing: 1px;
 			margin-left: 3px;
 		}
-		
+
 		</style>
 	</head>
 
@@ -40,7 +40,7 @@
 
 <a href="index.php"><h1>Skillancers</h1></a>
 
-<div class= "logo"> 
+<div class= "logo">
             <a class= "fontelogo" href="index.php"><img src="images/logo.png" alt="" width= "50" height= "50"></a>
         </div>
 
