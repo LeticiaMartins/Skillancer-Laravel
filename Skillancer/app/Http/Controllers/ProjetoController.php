@@ -8,6 +8,11 @@ use App\Projeto;
 
 class ProjetoController extends Controller
 {
+
+  public function __construct(){
+    $this->middleware('auth');
+  }
+  
   public function exibirTodosProjetos() {
     $projetos = Projeto::orderBy('titulo')->paginate(12);
 

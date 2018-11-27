@@ -72,7 +72,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class = "logo" src = "/img/logos/logo.png" alt = "Skillancers"></a>
+        <a class="navbar-brand js-scroll-trigger" href="/"><img class = "logo" src = "/img/logos/logo.png" alt = "Skillancers"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -84,6 +84,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
@@ -155,7 +158,7 @@
                       <li class="list-inline-item">
                         <a href="#">Termos de Uso</a>
                         <li class="list-inline-item">
-                        <a href="faq.php">FAQ</a>
+                        <a href="faq.blade.php">FAQ</a>
                       </li>
                     </ul>
                   </div>

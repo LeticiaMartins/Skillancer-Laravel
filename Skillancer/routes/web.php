@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/perfildev', 'PerfilController@perfilDev');
 
-Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -34,10 +34,13 @@ Route::delete('/perfildev/deletar', 'PerfilController@deletarPerfilDev');
 Route::get('/faq', 'FaqController@faqGeral');
 
 Route::get('/projeto_todos', 'ProjetoController@exibirTodosProjetos');
+Route::get('/projeto/exibir/{id}', 'ProjetoController@exibirProjeto');
+
+Auth::routes();
+
 Route::get('/projeto/adicionar', 'ProjetoController@criarProjeto');
 Route::post('/projeto/adicionar', 'ProjetoController@adicionarProjeto');
 Route::get('/projeto/editar/{id}', 'ProjetoController@editarProjeto');
 Route::put('/projeto/editar/{id}', 'ProjetoController@receberAlteracoes');
 Route::get('/projeto/deletar/{id}', 'ProjetoController@excluir');
 Route::delete('/projeto/deletar/{id}', 'ProjetoController@excluirProjeto');
-Route::get('/projeto/{id}', 'ProjetoController@exibirProjeto');

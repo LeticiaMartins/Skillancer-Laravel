@@ -8,7 +8,7 @@
 
           <div class="intro-lead-in">Skillancers<img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div>
           <div class="intro-heading text-uppercase">O FREELA IDEAL PARA VOCE</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Cadastre-se</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/projeto_todos">Projetos</a>
         </div>
       </div>
     </header>
