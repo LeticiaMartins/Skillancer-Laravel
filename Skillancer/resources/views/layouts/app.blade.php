@@ -166,18 +166,18 @@
               </div>
             </footer>
             <!-- Bootstrap/JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="/vendor/jquery/jquery.min.js"></script>
+            <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
             <!-- plugin JavaScript -->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
             <!-- entre em contato JavaScript -->
-            <script src="js/jqBootstrapValidation.js"></script>
-            <script src="js/contact_me.js"></script>
+            <script src="/js/jqBootstrapValidation.js"></script>
+            <script src="/js/contact_me.js"></script>
 
             <!-- custom scripts(modelo) -->
-            <script src="js/agency.min.js"></script>
+            <script src="/js/agency.min.js"></script>
 
           </body>
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
