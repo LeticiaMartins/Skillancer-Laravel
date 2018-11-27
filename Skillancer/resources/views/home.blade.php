@@ -257,7 +257,7 @@
               <p class="text-muted">"Fui ali gostar de mim e acabei ficando" - frase de Ana Avila</p>
             </div>
           </div>
-        
+        @endforeach
           <div class="row">
             <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">nosso time</h2>
