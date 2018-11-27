@@ -10,17 +10,17 @@
 
     <title>Skillancers</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- bootstrap/CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+    <!-- fontes -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
+    <!-- styles -->
     <link href="css/agency.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/agency.css">
 
@@ -68,7 +68,7 @@
 
   <body id="page-top">
 
-    <!-- Navigation -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class = "logo" src = "img/logos/logo.png" alt = "Skillancers"></a>
@@ -86,9 +86,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
             </li>
             @guest
                 <li class="nav-item">
@@ -123,11 +120,11 @@
       </div>
     </nav>
 
-    <!-- Header -->
+    <!-- header -->
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <!-- <div class= "logo-capa"><img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div> -->
+
           <div class="intro-lead-in">Skillancers<img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div>
           <div class="intro-heading text-uppercase">O FREELA IDEAL PARA VOCE</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Cadastre-se</a>
@@ -135,13 +132,13 @@
       </div>
     </header>
 
-    <!-- Services -->
+    <!-- nossos servicos -->
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">NOSSOS SERVIÇOS</h2>
-            <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+
           </div>
         </div>
 
@@ -224,7 +221,7 @@
       </div>
     </section>
 
-    <!-- Portfolio Grid -->
+    <!-- projetos e equipe -->
     <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
@@ -253,7 +250,14 @@
                   <p class="text-muted">{{$projeto->descricao}}</p>
                 </div>
               </div>
-            @endforeach
+              <img class="img-fluid" src="img/buquet.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>sem casório</h4>
+              <p class="text-muted">"Fui ali gostar de mim e acabei ficando" - frase de Ana Avila</p>
+            </div>
+          </div>
+        
           <div class="row">
             <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">nosso time</h2>
@@ -306,7 +310,7 @@
       </div>
     </section>
 
-    <!-- About -->
+    <!-- passo a passo -->
     <section id= "about" >
       <div class= "freelas">
         <div class="row">
@@ -387,7 +391,7 @@
       </div>
     </section>
 
-    <!-- Team -->
+    <!-- equipe -->
     <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
@@ -494,7 +498,6 @@
               </ul>
             </div>
           </div>
-
       </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -504,7 +507,7 @@
       </div>
     </section>
 
-    <!-- Clients -->
+    <!-- parcerias -->
     <section class="py-5">
       <div class="container">
         <div class="row">
@@ -532,7 +535,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- entre em contato -->
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -577,7 +580,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer>
       <div class="container">
         <div class="row">
@@ -619,9 +622,7 @@
       </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
+    <!-- projeto modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -634,7 +635,8 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+
+                  <!-- detalhes do projeto -->
                   <h4 class="text-uppercase">e-commerce/camisaria</h4>
                   <p class="item-intro text-muted">Hipsters.pano Camisaria</p>
 
@@ -664,7 +666,7 @@
       </div>
     </div>
 
-    <!-- Modal 2 -->
+    <!-- modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -677,7 +679,8 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Café Dog Friendly</h2>
                   <p class="item-intro text-muted">Cafésta!</p>
 
@@ -697,6 +700,7 @@
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     FECHAR</button>
+                  </div> 
                   </div>
                 </div>
               </div>
@@ -706,7 +710,7 @@
       </div>
     </div>
 
-    <!-- Modal 3 -->
+    <!-- modal 3 -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -719,14 +723,13 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Causas Sociais/E-commerce de flores/Rede Social</h2>
                   <p class="item-intro text-muted">E Vejo Flores Em VC</p>
 
                   <img class="primeira img-thumbnail rounded float-left" src= "img/flores1.jpg" alt="" width= "350" height= "410">
                   <img class="segunda img-thumbnail rounded float-right" src= "img/vitima.jpg" alt="" width= "230" height= "200">
                   <img class="terceira img-thumbnail rounded float-right" src= "img/flor.jpg" alt="" width= "300" height= "190">
-                  <!-- <img class="quarta img-thumbnail rounded float-left" src= "img/sapato.jpg" alt="" width= "350" height= "270"> -->
 
                   <div class= "textao">
                   <p>Sororidade é nosso foco. Nosso projeto visa a conexão entre mulheres com o intuito de encorajar e fortalecer aquelas que sofrem violêcia doméstica. Fazer a denúncia de seu agressor e continuar o processo policial que é muitas vezes moroso e machista exige apoio e força. Através de um financiamneto coletivo mandamos flores a elas, em gratidão por dividirem sua história conosco e como um símbolo de sororidade e amor-próprio.</p>
@@ -747,7 +750,7 @@
       </div>
     </div>
 
-    <!-- Modal 4 -->
+    <!-- modal 4 -->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -760,7 +763,7 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
@@ -781,7 +784,7 @@
       </div>
     </div>
 
-    <!-- Modal 5 -->
+    <!-- modal 5 -->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -794,7 +797,7 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
@@ -815,7 +818,7 @@
       </div>
     </div>
 
-    <!-- Modal 6 -->
+    <!-- modal 6 -->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -828,7 +831,7 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
@@ -849,18 +852,18 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap/JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
+    <!-- plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
+    <!-- entre em contato JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
-    <!-- Custom scripts for this template -->
+    <!-- custom scripts(modelo) -->
     <script src="js/agency.min.js"></script>
 
   </body>
