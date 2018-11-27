@@ -16,6 +16,7 @@
     @endif
 
     <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+
         <div class="wrapper wrapper--w680">
             <div class="card card-1">
                 <div class="card-heading"></div>
@@ -58,15 +59,20 @@
                         <br><br><br>
 
                             <div class="form-group">
-                              <h4 for="exampleFormControlFile1">faça o upload das fotos do seu projeto</h4>
+                              <h4 for="exampleFormControlFile1">faça o upload da foto de capa seu projeto</h4>
                               <br>
                               <input type="file" class="form-control-file" id="exampleFormControlFile1">
                             </div>
                             <br><br>
                          </div>
 
-                            <button class="btn btn--radius btn--green" type="submit">Enviar</button>
-                        </form>
+                         <div class="form-group">
+                              <h4 for="exampleFormControlFile1">faça o upload das fotos do seu projeto</h4>
+                              <br>
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                         </div>
+                    <button class="btn btn--radius btn--green" type="submit">Enviar</button>
+                </form>
         </div>
     </div>
 
