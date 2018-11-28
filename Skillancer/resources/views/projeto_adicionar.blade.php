@@ -23,7 +23,7 @@
 
                     <h2 class="title">conte mais sobre seu projeto</h2>
 
-                    <form action="/projeto/adicionar" method="POST">
+                    <form action="/projeto/adicionar" method="POST"  enctype="multipart/form-data">
 
                       {{-- csrf field --}}
                       @csrf
@@ -38,7 +38,7 @@
                                 <h4 for="exampleSelect2">tipo se site se houver</h4>
                                 <br>
 
-                                <select multiple class="form-control" id="exampleSelect2" name= "tipo_servico">
+                                <select multiple class="form-control" id="exampleSelect2" name= "tipo_servico" required>
                                   <option>e-commerce</option>
                                   <option>marketplace</option>
                                   <option>social/ONGs</option>
@@ -60,7 +60,7 @@
                             <div class="form-group">
                               <h4 for="exampleFormControlFile1">faça o upload das fotos do seu projeto</h4>
                               <br>
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="arquivo">
                             </div>
                             <br><br>
                          </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Projeto;
+use App\ImagemProjeto;
 
 class ProjetoController extends Controller
 {
@@ -42,6 +43,26 @@ class ProjetoController extends Controller
     ]);
 
     $projeto->save();
+
+    $arquivo = $request->file('arquivo');
+    if (empty($arquivo)) {
+      abort(400, 'Nenhum arquivo foi enviado');
+    }
+    // salvando
+    $nomePasta = 'uploads';
+    $arquivo->storePublicly($nomePasta);
+    $caminho = public_path()."\\storage\\$nomePasta";
+    $nomeArquivo = $arquivo->getClientOriginalName();
+   // movendo
+    $arquivo->move($caminho, $nomeArquivo);
+  
+    $imagem  = ImagemProjeto::create([
+        'caminho_imagem' => $caminho,
+        'fk_projeto' => $projeto->id
+    ]);
+
+    $imagem->save();
+
       return redirect('/projeto_todos');
     }
 
@@ -77,4 +98,5 @@ class ProjetoController extends Controller
     $projeto = Projeto::find($id);
     return view('projeto_id')->with('projeto', $projeto);
   }
+
 }
