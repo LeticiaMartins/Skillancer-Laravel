@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Projeto;
+use App\User;
 
 class ProjetoController extends Controller
 {
@@ -12,7 +13,7 @@ class ProjetoController extends Controller
   public function __construct(){
     $this->middleware('auth');
   }
-  
+
   public function exibirTodosProjetos() {
     $projetos = Projeto::orderBy('id_projeto', 'desc')->paginate(12);
 
@@ -92,7 +93,8 @@ class ProjetoController extends Controller
 
   public function exibirProjeto($id){
     $projeto = Projeto::find($id);
-    return view('projeto_id')->with('projeto', $projeto);
+    $cliente = User::find($projeto->fk_idUser);
+    return view('projeto_id')->with('projeto', $projeto)->with('cliente', $cliente->name);
   }
 
 }

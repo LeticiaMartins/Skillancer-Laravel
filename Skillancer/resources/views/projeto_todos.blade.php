@@ -3,24 +3,6 @@
 @section('css-custom', '/css/projetos.css')
 @section('content')
 
-
-  <h1>Lista de Projetos</h1>
-  <h2><a href= "/projeto/adicionar">Adicionar Projeto</a></h2>
-
-  <ul class= "lis-group" >
-    @foreach ($listaDeProjetos as $projeto)
-      <li class= "list-group-item">
-        {{$projeto->titulo}}
-        @if ($projeto->updated_at)
-          (atualizado {{ $projeto->updated_at->diffForHuman() }})
-        @endif
-
-        <a href= "/projeto/editar/{{ $projeto->id_projeto }}">Editar</a>
-        <a href= "/projeto/deletar/{{ $projeto->id_projeto }}">Deletar</a>
-      </li>
-      @endforeach
-    </ul>
-{{-- comentario --}}
     {{ $listaDeProjetos->links() }}
 
     <section id="portfolio">

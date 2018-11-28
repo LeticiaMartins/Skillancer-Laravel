@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>Skillancers</title>
+    <script src="/vendor/jquery/jquery.min.js"></script>
 
     <!-- bootstrap/CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -166,7 +167,6 @@
               </div>
             </footer>
             <!-- Bootstrap/JavaScript -->
-            <script src="/vendor/jquery/jquery.min.js"></script>
             <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
             <!-- plugin JavaScript -->
