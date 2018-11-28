@@ -31,7 +31,7 @@
                         <div class="input-group">
                         <h4>nome do projeto</h4>
                         <br>
-                            <input class="input--style-1" type="text" placeholder="nome do projeto se houver" name="titulo">
+                            <input class="input--style-1" type="text" placeholder="nome do projeto se houver" name="titulo" required>
                         </div>
                         <br>
 
@@ -54,7 +54,7 @@
                                     <br>
                                     <div class="form-group">
 
-                                    <textarea class="form-control" rows="5" id="comment" name= "descricao"></textarea>
+                                    <textarea class="form-control" rows="5" id="comment" name= "descricao" required></textarea>
                                   </div>
                         <br><br><br>
 

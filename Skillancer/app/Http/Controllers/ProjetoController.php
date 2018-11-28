@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Projeto;
-use App\ImagemProjeto;
 
 class ProjetoController extends Controller
 {
@@ -15,7 +14,7 @@ class ProjetoController extends Controller
   }
   
   public function exibirTodosProjetos() {
-    $projetos = Projeto::orderBy('titulo')->paginate(12);
+    $projetos = Projeto::orderBy('id_projeto', 'desc')->paginate(12);
 
     return view('projeto_todos')->with('listaDeProjetos', $projetos);
   }
@@ -33,17 +32,6 @@ class ProjetoController extends Controller
      'titulo' => 'unique:projeto,id_projeto|max:200'
     ]);
 
-    $projeto = Projeto::create([
-      'titulo'=> $request->input('titulo'),
-      'tipo_servico'=> $request->input('tipo_servico'),
-      'descricao'=> $request->input('descricao'),
-      'fk_id_freelancer'=> $request->input('fk_id_freelancer'),
-      'fk_idPagamento'=> $request->input('fk_idPagamento'),
-      'fk_idUser'=> Auth::id()
-    ]);
-
-    $projeto->save();
-
     $arquivo = $request->file('arquivo');
     if (empty($arquivo)) {
       abort(400, 'Nenhum arquivo foi enviado');
@@ -56,12 +44,19 @@ class ProjetoController extends Controller
    // movendo
     $arquivo->move($caminho, $nomeArquivo);
   
-    $imagem  = ImagemProjeto::create([
-        'caminho_imagem' => $caminho,
-        'fk_projeto' => $projeto->id
+    $fotoUrl = "/storage/uploads/".$nomeArquivo;
+
+    $projeto = Projeto::create([
+      'titulo'=> $request->input('titulo'),
+      'tipo_servico'=> $request->input('tipo_servico'),
+      'descricao'=> $request->input('descricao'),
+      'imagem_url'=> $fotoUrl,
+      'fk_id_freelancer'=> $request->input('fk_id_freelancer'),
+      'fk_idPagamento'=> $request->input('fk_idPagamento'),
+      'fk_idUser'=> Auth::id()
     ]);
 
-    $imagem->save();
+    $projeto->save();
 
       return redirect('/projeto_todos');
     }
@@ -94,6 +89,7 @@ class ProjetoController extends Controller
 
     return redirect('/projeto_todos');
   }
+
   public function exibirProjeto($id){
     $projeto = Projeto::find($id);
     return view('projeto_id')->with('projeto', $projeto);
