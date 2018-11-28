@@ -26,11 +26,4 @@
         </ul>
       </div>
     </div>
-<style media="screen">
-#mainNav{
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #212529;
-}
-</style>
 @stop
