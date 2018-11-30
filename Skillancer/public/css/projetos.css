@@ -20,7 +20,9 @@ body {
     line-height: 1.75;
   }
 
-
+  input[type=checkbox], input[type=radio]{
+    width: auto;
+  }
 
   h1,
   h2,
