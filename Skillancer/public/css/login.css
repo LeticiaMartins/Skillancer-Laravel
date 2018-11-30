@@ -4,8 +4,10 @@ body {
 }
 
 
-
 body {
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/bg-registration-form-1.jpg');
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -17,6 +19,10 @@ body {
   background-attachment: fixed;
   font-family: 'Montserrat', sans-serif;
 
+}
+
+.form-group {
+  width: 100%;
 }
 
 .form-signin {
