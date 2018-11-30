@@ -3,8 +3,7 @@
 @section('css-custom', '/css/cadastro.css')
 @section('content')
 
-		<div class="container-fluid">
-			<div class="wrapper" style="background-image: url('/images_cadastro/bg-registration-form-1.jpg');">
+			<div class="wrapper">
 
 				<div class="inner">
 					<div class="image-holder">
@@ -86,6 +85,5 @@
 			<div class="clearfix"></div>
 		</div>
 
-	</div>
 
     @stop

@@ -10,6 +10,9 @@
   box-sizing: border-box; }
 
 body {
+  background-position: center;
+  background-size: cover;
+  background-image: url('/images_cadastro/bg-registration-form-1.jpg');
   font-family: "Poppins-Regular";
   color: #333;
   font-size: 13px;

@@ -66,7 +66,7 @@ a:hover {
 .form-group {
   display: flex; }
   .form-group input {
-    width: 50%; }
+    width: 100%; }
     .form-group input:first-child {
       margin-right: 25px; }
 

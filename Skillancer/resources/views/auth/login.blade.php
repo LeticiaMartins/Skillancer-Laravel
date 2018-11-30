@@ -1,48 +1,51 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Login Skillancers</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends('layouts.app')
 
-		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+@section('css-custom', '/css/cadastro.css')
+@section('content')
 
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="/css/style.css">
-		<!-- GOOGLE FONTS -->
-		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<style>
 
-		<style>
 
-		.logo{
 
-			margin-bottom:550px;
-			margin-left: 140px;
-		}
+.box{
+	position: relative;
 
-		h1{
-			position: fixed;
-			font-family: "Kaushan Script", cursive;
-			color: #fcf7eb;
-			text-decoration: none;
-			font-weight: 700;
-			margin-top: -300px;
-			letter-spacing: 1px;
-			margin-left: 3px;
-		}
+}
 
-		</style>
-	</head>
+.box1 {
+	position: absolute;
+	    top: 0;
+	    width: 271px;
+	    left: 0;
+	    box-sizing: border-box;
+	    margin: 0px;
+	    padding: 0;
+}
+.box1 a{
+	position: relative;
+	left: -14px;
+}
 
-	<body>
-<div class="wrapper" style="background-image: url('images/bg-registration-form-1.jpg');">
 
-<a href="index.php"><h1>Skillancers</h1></a>
+.form-group input {
+    width: 100%;
+}
 
-<div class= "logo">
-            <a class= "fontelogo" href="index.php"><img src="images/logo.png" alt="" width= "50" height= "50"></a>
-        </div>
+.form-check{
+	position: absolute;
+    display: block;
+    padding-left: 1.25rem;
+    left: -129px;
+    top: 0;
+}
+.form-check-input {
+    position: static;
+    margin-top: .3rem;
+    margin-left: -1.25rem;
+}
+</style>
+
+<div class="wrapper">
 
     <div class="inner">
         <div class="image-holder">
@@ -54,7 +57,7 @@
 
                 <div class="form-group row">
 
-                    <div class="col-md-8">
+                    <div class="col-md-10">
                         <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                         @if ($errors->has('email'))
@@ -67,7 +70,7 @@
 
                 <div class="form-group row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-10">
                         <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                         @if ($errors->has('password'))
@@ -90,8 +93,8 @@
                     </div>
                 </div>
 
-                <div class="form-group row mb-0">
-                    <div class="col-md-8 offset-md-4">
+                <div class="form-group row mb-0 box">
+                    <div class="col-md-8 offset-md-4 box1">
                         <button type="submit" class="btn btn-primary">
                             {{ __('Login') }}
                         </button>
@@ -104,5 +107,4 @@
             </form>
     </div>
 </div>
-</body>
-</html>
+  @stop
