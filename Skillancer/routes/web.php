@@ -37,8 +37,8 @@ Route::get('/projeto_todos', 'ProjetoController@exibirTodosProjetos');
 Route::get('/projeto/exibir/{id}', 'ProjetoController@exibirProjeto');
 
 Auth::routes();
-Route::get('/cadastro_freelancer','Cadastro_Controller@cadastroFreelancer');
-Route::post('/cadastro_freelancer','Cadastro_Controller@cadastroRetorno');
+Route::get('/cadastro_freelancer','CadastroController@cadastroFreelancer');
+Route::post('/cadastro_freelancer','CadastroController@cadastroRetorno');
 
 Route::get('/projeto/adicionar', 'ProjetoController@criarProjeto');
 Route::post('/projeto/adicionar', 'ProjetoController@adicionarProjeto');

@@ -14,6 +14,18 @@
           </div>
         </div>
 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <form action=" " method="post">
+                <label for="busca">Buscar</label>
+                <input type="search" id="busca" name="q">
+                <button type="submit">&#128269;</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
             @foreach ($listaDeProjetos as $projeto)
           <div class="col-md-4 col-sm-6 portfolio-item">

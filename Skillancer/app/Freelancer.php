@@ -17,10 +17,10 @@ class Freelancer extends Model
         'twitter',
         'github'
     ];
-    
+
     public $timestamps = false;
 
     public function habilidades(){
-        return $this->belongsToMany(Habilidade::class, 'freelancer_has_habilidade', 'id_habilidade', 'id_freelancer');
+        return $this->belongsToMany(Habilidade::class, 'freelancer_has_habilidade', 'habilidade_id_habilidade', 'Freelancer_id_freelancer');
     }
 }

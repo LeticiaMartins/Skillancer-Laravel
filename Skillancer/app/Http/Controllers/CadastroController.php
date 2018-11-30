@@ -3,14 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 use App\User;
 use App\Freelancer;
 use App\Habilidade;
+use App\Freelancer_has_habilidade;
 
-class Cadastro_Controller extends Controller
+class CadastroController extends Controller
 {
     public function cadastro($data) {
-        
+
         $user = User::create([
             'username' => $data['username'],
             'email' => $data['email'],
@@ -29,7 +32,7 @@ class Cadastro_Controller extends Controller
     public function cadastroRetorno(Request $request){
 
         $freelancer = Freelancer::create([
-            'fk_Id_user' =>  \Auth::user()->id,
+            'fk_Id_user' =>  Auth::id(),
             'tipo_servico' => $request['tipo_servico'],
             'linkedin' => $request['linkedin'],
             'facebook' => $request['facebook'],
@@ -39,17 +42,17 @@ class Cadastro_Controller extends Controller
 
         $freelancer->save();
 
-        $habilidades = $request['habilidades'];
-        foreach($habilidades as $item){
-            $habilidade = Habilidade::create([
-                'Freelancer_id_freelancer' =>  $freelancer->id_freelancer,
-                'habilidade_id_habilidade' => $item
-            ]); 
-            $habilidade->save();
+        $habilidades = $request->get('habilidades');
+        foreach ($habilidades as $item) {
+          $habilidade = Freelancer_has_habilidade::create([
+            'Freelancer_id_freelancer' =>  $freelancer->id_freelancer,
+            'habilidade_id_habilidade' => $item
+          ]);
+
+          $habilidade->save();
         }
 
-        return [$freelancer, $habilidades];
+        return redirect('/perfildev');
     }
-
 
 }

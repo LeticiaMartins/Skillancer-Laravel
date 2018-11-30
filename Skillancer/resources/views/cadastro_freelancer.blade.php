@@ -27,7 +27,7 @@
 
                     <h2 class="title">{{ Auth::user()->username }}, <br>    conte mais sobre você</h2>
 
-                    <form action="/projeto/adicionar" method="POST"  enctype="multipart/form-data">
+                    <form action="/cadastro_freelancer" method="POST"  enctype="multipart/form-data">
 
                       {{-- csrf field --}}
                       @csrf
@@ -56,11 +56,11 @@
                           <div class="form-group">
 
                           <div class="input-group mb-3">
-                            <select class="form-control" name="habilidades" multiple>
+                            <select class="form-control" name="habilidades[]" multiple>
                               <option selected disabled>Selecione</option>
-                              @foreach($habilidades as $habilidade)
-                              <option value="{{$habilidade->id_habilidade}}">{{$habilidade->titulo}}</option>
-                              @endforeach
+                                @foreach($habilidades as $habilidade)
+                                  <option value="{{$habilidade->id_habilidade}}">{{$habilidade->titulo}}</option>
+                                @endforeach
                             </select>
                           </div>
                           <small>Pressione o Ctrl para selecionar varias opções</small>
@@ -102,8 +102,8 @@
                           <input type="text" name="twitter" id="twitter" class="form-control">
                           </div>
                         </div>
-                        
-    
+
+
                     <button class="btn btn--radius btn--green" type="submit">Enviar</button>
                 </form>
         </div>
