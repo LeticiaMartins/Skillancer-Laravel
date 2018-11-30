@@ -66,11 +66,7 @@
                             <br><br>
                          </div>
 
-                         <div class="form-group">
-                              <h4 for="exampleFormControlFile1">faça o upload das fotos do seu projeto</h4>
-                              <br>
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                         </div>
+                        
                     <button class="btn btn--radius btn--green" type="submit">Enviar</button>
                 </form>
         </div>

@@ -20,7 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <!-- styles -->
     <link href="/css/agency.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/agency.css">
@@ -34,7 +35,7 @@
     }
 
     a{
-      color: antiquewhite;
+      color: #fed136;
     }
 
     img.big-logo{
@@ -104,10 +105,19 @@
             @else
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        {{ Auth::user()->username }} <span class="caret"></span>
+                    <div class="img-profile" style="background-image: url('/../image/guanabara.jpg')"></div>
+                    {{ Auth::user()->username }} <span class="caret"></span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" id="collapseExample" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="/projeto/adicionar">
+                            {{ __('Publicar Projetos') }}
+                            </a>
+
+                            <a class="dropdown-item" href="/perfildev">
+                            {{ __('Freelancer') }}
+                            </a>
+
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
@@ -183,5 +193,6 @@
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+        <!-- Plugin JavaScript -->
+        <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
         </html>
