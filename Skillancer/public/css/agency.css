@@ -9,6 +9,12 @@ body {
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+.title-serv{
+  color: #6c757d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 p {
   line-height: 1.75;
 }
@@ -23,6 +29,10 @@ a:hover {
 
 .text-primary {
   color: #fed136 !important;
+}
+
+input[type=checkbox], input[type=radio]{
+  width: auto;
 }
 
 h1,
