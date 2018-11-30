@@ -1,124 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('content')
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Skillancers</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/agency.css">
-    <style>
-
-    img.logo{
-      width: 45px;
-      height:45px;
-    }
-
-    a{
-      color: antiquewhite;
-    }
-
-    img.big-logo{
-      width: 220px;
-      height: 220px;
-    }
-
-    div.intro-lead-in{
-      margin-top: 40px;
-    }
-
-    .carousel-inner{
-      position: relative;
-      margin-top: 2000px;
-      margin: 0 auto;
-      width: 600px;
-      height: 400px;
-    }
-
-    .textao{
-      positon: relative;
-      display: inline-block;
-    }
-
-    .freelas{
-      margin-top: 50px;
-      display: inline;
-    }
-
-    </style>
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class = "logo" src = "img/logos/logo.png" alt = "Skillancers"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href='/faq'>perguntas frequentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cadastro.php">cadastre-se</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.php">login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
+    <!-- header -->
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <!-- <div class= "logo-capa"><img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div> -->
+
           <div class="intro-lead-in">Skillancers<img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div>
           <div class="intro-heading text-uppercase">O FREELA IDEAL PARA VOCE</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Cadastre-se</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/projeto_todos">Projetos</a>
         </div>
       </div>
     </header>
 
-    <!-- Services -->
+    <!-- nossos servicos -->
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">NOSSOS SERVIÇOS</h2>
-            <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+
           </div>
         </div>
 
@@ -170,7 +71,6 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-
         <br>
         <br>
         <div class="row text-center">
@@ -202,60 +102,36 @@
       </div>
     </section>
 
-    <!-- Portfolio Grid -->
+    <!-- projetos e equipe -->
     <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">projetos em fase de construção</h2>
-            <h3 class="section-subheading text-muted">três projetos, três propostas diferentes, veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolverorxs ideal para você</h3>
+            <h3 class="section-subheading text-muted">três projetos, três propostas diferentes, veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolvedor ideal para você</h3>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/camisas.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>por outro ângulo</h4>
-              <p class="text-muted">E-commerce de vestuário masculino para quem está longe de ser social</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
+          @foreach ($listaDeProjetos as $projeto)
+              <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="img/camisas.jpg" alt="">
+                </a>
+                <div class="portfolio-caption">
+                  <h4>{{$projeto->titulo}}</h4>
+                  @if ($projeto->updated_at)
+                    <small>(atualizado {{ $projeto->updated_at->diffForHuman() }})</small>
+                  @endif
+                  <p class="text-muted">{{$projeto->descricao}}</p>
                 </div>
               </div>
-              <img class="img-fluid" src="img/pets.png" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>quem é o docinho?</h4>
-              <p class="text-muted">Doceria pet friendly que capta recursos para pets em situação vulnerável</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/buquet.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>sem casório</h4>
-              <p class="text-muted">"Fui ali gostar de mim e acabei ficando" - frase de Ana Avila</p>
-            </div>
-          </div>
-
+        @endforeach
           <div class="row">
             <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">nosso time</h2>
@@ -308,7 +184,7 @@
       </div>
     </section>
 
-    <!-- About -->
+    <!-- passo a passo -->
     <section id= "about" >
       <div class= "freelas">
         <div class="row">
@@ -389,7 +265,7 @@
       </div>
     </section>
 
-    <!-- Team -->
+    <!-- equipe -->
     <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
@@ -496,7 +372,6 @@
               </ul>
             </div>
           </div>
-
       </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -506,7 +381,7 @@
       </div>
     </section>
 
-    <!-- Clients -->
+    <!-- parcerias -->
     <section class="py-5">
       <div class="container">
         <div class="row">
@@ -534,7 +409,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- entre em contato -->
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -579,52 +454,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Skillancers 2018</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Política de Privacidade</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Termos de Uso</a>
-                <li class="list-inline-item">
-                <a href="faq.php">FAQ</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-
+    <!-- projeto modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -637,7 +467,8 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+
+                  <!-- detalhes do projeto -->
                   <h4 class="text-uppercase">e-commerce/camisaria</h4>
                   <p class="item-intro text-muted">Hipsters.pano Camisaria</p>
 
@@ -667,7 +498,7 @@
       </div>
     </div>
 
-    <!-- Modal 2 -->
+    <!-- modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -680,7 +511,8 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Café Dog Friendly</h2>
                   <p class="item-intro text-muted">Cafésta!</p>
 
@@ -701,6 +533,7 @@
                     <i class="fas fa-times"></i>
                     FECHAR</button>
                   </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -709,7 +542,7 @@
       </div>
     </div>
 
-    <!-- Modal 3 -->
+    <!-- modal 3 -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -722,14 +555,13 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Causas Sociais/E-commerce de flores/Rede Social</h2>
                   <p class="item-intro text-muted">E Vejo Flores Em VC</p>
 
                   <img class="primeira img-thumbnail rounded float-left" src= "img/flores1.jpg" alt="" width= "350" height= "410">
                   <img class="segunda img-thumbnail rounded float-right" src= "img/vitima.jpg" alt="" width= "230" height= "200">
                   <img class="terceira img-thumbnail rounded float-right" src= "img/flor.jpg" alt="" width= "300" height= "190">
-                  <!-- <img class="quarta img-thumbnail rounded float-left" src= "img/sapato.jpg" alt="" width= "350" height= "270"> -->
 
                   <div class= "textao">
                   <p>Sororidade é nosso foco. Nosso projeto visa a conexão entre mulheres com o intuito de encorajar e fortalecer aquelas que sofrem violêcia doméstica. Fazer a denúncia de seu agressor e continuar o processo policial que é muitas vezes moroso e machista exige apoio e força. Através de um financiamneto coletivo mandamos flores a elas, em gratidão por dividirem sua história conosco e como um símbolo de sororidade e amor-próprio.</p>
@@ -750,7 +582,7 @@
       </div>
     </div>
 
-    <!-- Modal 4 -->
+    <!-- modal 4 -->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -763,7 +595,7 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
@@ -784,7 +616,7 @@
       </div>
     </div>
 
-    <!-- Modal 5 -->
+    <!-- modal 5 -->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -797,7 +629,7 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
@@ -818,7 +650,7 @@
       </div>
     </div>
 
-    <!-- Modal 6 -->
+    <!-- modal 6 -->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -831,7 +663,7 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
+                  <!-- detalhes do projeto -->
                   <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
@@ -851,24 +683,4 @@
         </div>
       </div>
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-
-  </body>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-</html>
+@stop

@@ -1,104 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Skillancers</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template-home -->
-    <link href="css/agency.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/agency.css">
-
-    <!-- Custom styles for this template-faq -->
-    <link rel="stylesheet" href="/css/faq.css">
-    <style>
-
-    img.logo{
-      width: 45px;
-      height:45px;
-    }
-
-    a{
-      color: antiquewhite;
-    }
-
-    img.big-logo{
-      width: 220px;
-      height: 220px;
-    }
-
-    div.intro-lead-in{
-      margin-top: 40px;
-    }
-
-    .carousel-inner{
-      position: relative;
-      margin-top: 2000px;
-      margin: 0 auto;
-      width: 600px;
-      height: 400px;
-    }
-
-    .textao{
-      positon: relative;
-      display: inline-block;
-    }
-
-    .freelas{
-      margin-top: 50px;
-      display: inline;
-    }
-
-    </style>
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class = "logo" src = "img/logos/logo.png" alt = "Skillancers"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cadastro.php">cadastre-se</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.php">login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+@section('css-custom', '/css/faq.css')
+@section('content')
 
     <!-- Header -->
     <header class="masthead">
@@ -107,7 +10,6 @@
           <!-- <div class= "logo-capa"><img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div> -->
           <div class="intro-lead-in">Skillancers<img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div>
           <div class="intro-heading text-uppercase">O FREELA IDEAL PARA VOCE</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Cadastre-se</a>
         </div>
       </div>
     </header>
@@ -283,26 +185,9 @@
               <!--  -->
             </div>
           </div>
+          <div class="clearfix">
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          </div>
+        </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-    <!-- Faq JavaScript -->
-    <script src="js/faq.js"></script>
-
-  </body>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-</html>
+@stop

@@ -76,7 +76,7 @@ body {
 }
 
 .list-group.help-group .faq-list .list-group-item.active {
-  background-color: #17a2b8;
+  background-color: #fed136;
   font-weight: 700;
   border-style: double;
   color: rgba(0, 0, 0, 0.87);
@@ -115,7 +115,7 @@ body {
   text-decoration: none;
 }
 .panel.panel-help .panel-heading {
-  background-color: #17a2b8;
+  background-color: #fed136;
   padding: 0 16px;
   line-height: 48px;
   border-radius: 10px;
