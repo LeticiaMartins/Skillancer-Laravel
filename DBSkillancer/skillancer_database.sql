@@ -31,7 +31,7 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS `skillancer`.`Users` (
-  `id_user` INT(11) NOT NULL,
+  `id_user` INT(11) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `sobrenome` VARCHAR(45) NOT NULL,
   `cpf_cnpj` INT(11) NOT NULL,
