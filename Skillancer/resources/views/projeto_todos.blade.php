@@ -19,8 +19,10 @@
             <div class="col-lg-12 text-center">
               <form action=" " method="post">
                 <label for="busca">Buscar</label>
-                <input type="search" id="busca" name="q">
-                <button type="submit">&#128269;</button>
+                <div class="container">
+                  <input type="search" id="busca" name="q">
+                  <button type="submit">OK</button>
+                </div>
               </form>
             </div>
           </div>
