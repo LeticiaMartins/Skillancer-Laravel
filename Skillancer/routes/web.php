@@ -39,11 +39,11 @@ Route::get('/projeto/exibir/{id}', 'ProjetoController@exibirProjeto');
 
 //pag de projetos para exibir para o freelancer aplicar
 Route::get('/projetos_freela', 'ProjetosfreelaController@exibirTodosProjetos');
-Route::get('/projetosfreela/exibir/{id}', 'ProjetosController@exibirProjetos');
+Route::get('/projetosfreela/exibir/{id}', 'ProjetosfreelaController@exibirProjetos');
 
 //pag para exibir todos os freelancer
-Route::get('/freela_todos', 'FreelasController@exibirTodosFreelas');
-Route::get('/Freela/exibir/{id}', 'FreelaController@exibirFreela');
+Route::get('/freela_todos', 'ProjetosfreelaController@exibirTodosProjetos');
+Route::get('/Freela/exibir/{id}', 'ProjetosfreelaController@exibirProjeto');
 
 
 Auth::routes();
