@@ -59,9 +59,5 @@ Route::get('/projeto/deletar/{id}', 'ProjetoController@excluir');
 Route::delete('/projeto/deletar/{id}', 'ProjetoController@excluirProjeto');
 
 //crud pag de projetos do freelancer
-Route::get('/projetos_freela/adicionar', 'ProjetosfreelaController@criarProjeto');
-Route::post('/projetos_freela/adicionar', 'ProjetosfreelaController@adicionarProjeto');
-Route::get('/projetos_freela/editar/{id}', 'ProjetosfreelaController@editarProjeto');
-Route::put('/projetos_freela/editar/{id}', 'ProjetosfreelaController@receberAlteracoes');
-Route::get('/projetos_freela/deletar/{id}', 'ProjetosfreelaController@excluir');
-Route::delete('/projetos_freela/deletar/{id}', 'ProjetosfreelaController@excluirProjeto');
+Route::get('/projetos_freela/aplicar', 'ProjetosfreelaController@aplicarProjeto');
+Route::post('/projetos_freela/aplicar', 'ProjetosfreelaController@enviarProjeto');
