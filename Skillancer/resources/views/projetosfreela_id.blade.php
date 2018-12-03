@@ -5,8 +5,7 @@
 
     <div class="container">
       <div class="projeto-exibir">
-        <a href= "/projetos_freela/editar/{{ $projeto->id_projeto }}" class="btn btn-default">Editar</a>
-        <a href= "/projetos_freela/deletar/{{ $projeto->id_projeto }}" class="btn btn-default">Deletar</a>
+        <a href= "/projetos_freela/aplicar/{{ $projeto->id_projeto }}" class="btn btn-default">Aplicar</a>
         <h4 class="text-uppercase">{{$projeto->titulo}}</h4>
         <p class="item-intro text-muted">Hipsters.pano Camisaria</p>
 

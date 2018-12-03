@@ -4,30 +4,26 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-use App\Projeto;
-use App\User;
+use App\Freelancer;
 
-class ProjetosfreelaController extends Controller
+class FreelaController extends Controller
 {
 
   public function __construct(){
     $this->middleware('auth');
   }
 
-  public function exibirTodosProjetos() {
-    $projetos = Projeto::orderBy('id_projeto', 'desc')->paginate(12);
+  public function exibirTodosfreelancers() {
+    $freelancer = Freelancer::orderBy('id_freelancer', 'desc')->paginate(24);
 
-    return view('projetos_freela')->with('listaDeProjetos', $projetos);
+    return view('freela_todos')->with('listaDeFreelancers', $freelancer);
   }
 
   public function novo() {
-    return view('projetos_freela');
+    return view('freela_todos');
   }
 
 
-  public function aplicarProjeto(){
-    return view('projetosfreela_aplicar');
-  }
 
 // public function enviarProjeto(){
 //   $projeto = Projeto::find($id);
@@ -98,10 +94,10 @@ class ProjetosfreelaController extends Controller
  //  }
  //
 
-  public function exibirProjeto($id){
-    $projeto = Projeto::find($id);
-    $cliente = User::find($projeto->fk_idUser);
-    return view('projeto_id')->with('projeto', $projeto)->with('cliente', $cliente->name);
+  public function exibirFreelancer($id){
+    $freelancer = Freelancer::find($id);
+    $cliente = User::find($freelancer->fk_idUser);
+    return view('projetosfreela_id')->with('freelancer', $freelancer)->with('cliente', $cliente->name);
   }
 
 }
