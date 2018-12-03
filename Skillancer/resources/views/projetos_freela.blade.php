@@ -31,7 +31,7 @@
         <div class="row">
             @foreach ($listaDeProjetos as $projeto)
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link"  href="projeto/exibir/{{$projeto->id_projeto}}">
+            <a class="portfolio-link"  href="projetosfreela/exibir/{{$projeto->id_projeto}}">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -45,6 +45,7 @@
                 <small>(atualizado {{ $projeto->updated_at->diffForHuman() }})</small>
               @endif
               <p class="text-muted">{{$projeto->descricao}}</p>
+              <a class="btn btn-primary btn-x2 text-uppercase js-scroll-trigger" href="/projetosfreela/aplicar">Aplicar</a>
             </div>
           </div>
           @endforeach

@@ -44,7 +44,7 @@ class ProjetoController extends Controller
     $nomeArquivo = $arquivo->getClientOriginalName();
    // movendo
     $arquivo->move($caminho, $nomeArquivo);
-  
+
     $fotoUrl = "/storage/uploads/".$nomeArquivo;
 
     $projeto = Projeto::create([

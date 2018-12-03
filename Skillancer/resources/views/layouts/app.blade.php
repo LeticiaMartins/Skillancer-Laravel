@@ -86,13 +86,13 @@
               <a class="nav-link js-scroll-trigger" href="#services">serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">projetos</a>
+              <a class="nav-link js-scroll-trigger" href="/projeto_todos">projetos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">passo a passo</a>
+              <a class="nav-link js-scroll-trigger" href="/freela_todos">Freelancers</a>
             </li>
             @guest
                 <li class="nav-item">
