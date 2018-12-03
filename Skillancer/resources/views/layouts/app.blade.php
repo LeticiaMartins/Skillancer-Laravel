@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <!-- styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="/css/agency.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/agency.css">
     <link rel="stylesheet" href="@yield('css-custom')">
