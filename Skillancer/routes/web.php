@@ -19,9 +19,6 @@ Route::get('/perfildev', 'PerfilController@perfilDev');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Id porque como é um especifico que exibe ele vem de alguma pesquisa
-
-
 //crud perfil dev
 Route::get('/perfildev/todos', 'PerfilController@exibirTodosPerfilDev');
 Route::get('/perfildev/adicionar', 'PerfilController@criarPerfilDev');
@@ -61,3 +58,7 @@ Route::delete('/projeto/deletar/{id}', 'ProjetoController@excluirProjeto');
 //crud pag de projetos do freelancer
 Route::get('/projetosfreela/aplicar', 'ProjetosfreelaController@aplicarProjeto');
 //Route::post('/projetosfreela/aplicar', 'ProjetosfreelaController@enviarProjeto');
+
+
+// Pagamento Cadastro
+Route::get('/pagamento', 'PagamentoController@opcoesPagamento');
