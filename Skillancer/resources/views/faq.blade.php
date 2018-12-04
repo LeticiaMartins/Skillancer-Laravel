@@ -3,19 +3,13 @@
 @section('css-custom', '/css/faq.css')
 @section('content')
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <!-- <div class= "logo-capa"><img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div> -->
-          <div class="intro-lead-in">Skillancers<img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div>
-          <div class="intro-heading text-uppercase">O FREELA IDEAL PARA VOCE</div>
-        </div>
-      </div>
-    </header>
-
     <!-- F.A.Q. -->
         <div class="container main">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">faq</h2>
+            </div>
+          </div>
           <div class="col-md-4">
             <ul class="list-group help-group">
               <div class="faq-list list-group nav nav-tabs">
@@ -39,7 +33,7 @@
                     </a>
                      <!-- <div id="help-one" class="collapse in"> -->
                       <div class="panel-body">
-                      <img class="img-f" src="./image/acordo.jpg">
+                      <img class="img-f" src="./image/foto_faq.jpg">
                       </div>
                     <!-- </div> -->
                   </div>
