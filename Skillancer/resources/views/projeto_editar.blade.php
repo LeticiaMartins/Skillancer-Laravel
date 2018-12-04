@@ -27,7 +27,6 @@
         {{ method_field('PUT') }}
 
         <label>Nome do Projeto</label>
-        <label>Nome do Projeto</label>
         <input type="text" name="titulo" value="{{$projeto->titulo}}"><br>
         <label>Tipo de Serviço</label>
         <input type="text" name="tipo_servico" value="{{$projeto->tipo_servico}}"><br>

@@ -17,16 +17,17 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <form action=" " method="post">
+              <form action="" method="post">
                 <label for="busca">Buscar</label>
                 <div class="container">
-                  <input type="search" id="busca" name="q">
+                  <input type="search" id="busca" name="palavra" />
                   <button type="submit">OK</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
+
 
         <div class="row">
             @foreach ($listaDeProjetos as $projeto)

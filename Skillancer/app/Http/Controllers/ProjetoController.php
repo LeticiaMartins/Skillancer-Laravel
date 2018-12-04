@@ -69,11 +69,13 @@ class ProjetoController extends Controller
 
   public function receberAlteracoes(Request $request, $id){
     $request->validate([
-      'titulo' => 'required|min:2|max:20|unique:projeto'
+      'titulo' => 'required|min:2|max:45|unique:projeto,titulo,'.$id.',id_projeto'
    ]);
 
     $projeto = Projeto::find($id);
     $projeto->titulo = $request->input('titulo');
+    $projeto->descricao = $request->input('descricao');
+    $projeto->tipo_servico = $request->input('tipo_servico');
     $projeto->save();
 
     return redirect('/projeto_todos');
