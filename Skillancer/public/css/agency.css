@@ -194,14 +194,20 @@ img::-moz-selection {
   color: #fed136;
 }
 
+.navbar{
+  background-color: #435058 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: #435058;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
