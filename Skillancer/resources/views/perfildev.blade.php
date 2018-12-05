@@ -11,6 +11,8 @@
           </h1>
           <div class="subheading mb-5">
             <a href="mailto:joana.silva@gmail.com">gafanhoto@gmail.com</a>
+            <br>
+            <a class="btn btn-primary btn-x2 text-uppercase js-scroll-trigger" href="/projetos_freela">Aplicar para um projeto</a>
 
           <p class="lead mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
@@ -93,6 +95,6 @@
 
 
     Custom scripts for this template -->
-    <!-- <script src="/js/perfil_dev.min.js"></script> --> 
+    <!-- <script src="/js/perfil_dev.min.js"></script> -->
 
 @stop
