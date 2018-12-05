@@ -3,6 +3,17 @@
 @section('css-custom', '/css/cadastro.css')
 @section('content')
 
+<style>
+
+.inner{
+	margin-top: 93px;
+}
+
+.image-holder img{
+	margin-top: 39px;
+}
+</style>
+
 			<div class="wrapper">
 
 				<div class="inner">
@@ -10,7 +21,7 @@
 						<img src="/images_cadastro/homem.jpg" alt="">
 					</div>
 
-					<form name= "signup" action="{{ route('register') }}" method= "POST">
+					<form id="form" name= "signup" action="{{ route('register') }}" method= "POST">
 						@csrf
 						<h1>crie sua conta</h1>
 
@@ -76,7 +87,9 @@
 							<input id="password-confirm" type="password" placeholder="Confirmar Senha" class="form-control" name="password_confirmation" required>
 							<i class="zmdi zmdi-lock"></i>
 						</div>
-						<button>Enviar
+
+						<div class="exibeErros"></div>
+						<button class="btn-submit" type="button">Enviar
 						</button>
 					</form>
 
@@ -84,6 +97,6 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
-
+<script src="/js/validacao.js"></script>
 
     @stop
