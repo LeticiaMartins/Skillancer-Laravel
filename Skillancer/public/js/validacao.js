@@ -1,47 +1,48 @@
-// seleciona os campos
-let form = document.getElementById('cadastro');
-let nome = document.getElementById('nome');
 let email = document.getElementById('email');
-let idade = document.getElementById('idade');
-let cpf = document.getElementById('cpf');
+let nome = document.getElementById('name');
+let form = document.getElementById('form');
 let exibeErros = document.querySelector('.exibeErros');
+let btnSubmit = document.querySelector('.btn-submit');
+let sobrenome = document.getElementById('sobrenome');
+let user = document.getElementById('user');
+let senha = document.getElementById('password');
+let confirmaSenha = document.getElementById('password-confirm');
 
-// criar div para mostrar os erros
-
-form.onsubmit = function(){
-// campos obrigatorios
+btnSubmit.onclick = function(){
 let erros = [];
-
-if(nome.value == ""){
-    erros.push('Preencha o campo Nome');
- }
-erros.forEach(erro => {
-    exibeErros.innerHTML(erros);
-
-   });    
+if(nome.value ==""){
+        erros.push('Preencha o campo Nome.');
+}
+if(sobrenome.value ==""){
+    erros.push('Preencha o campo Sobrenome.');
+}
+if(user.value ==""){
+    erros.push('Preencha o campo Nome de usuário.');
+}
+if (erros.length>0){
+    exibeErros.classList.add('alert');
+    exibeErros.classList.add('alert-danger');
 }
 
-// validacao de campo numerico//nao esquece de comentar pq pro projeto nao serve
-idade.oninput = function () {
-    this.value = this.value.replace(/\D/g,"");
-};
-
-
-cpf.oninput = function () {
-    this.value = this.value.replace(/\D/g,"");
-};
-
-telefone.oninput = function () {
-    this.value = this.value.replace(/\D/g,"");
-};
-
-// OU
-function soNumeros(){
-    this.value = this.value.replace(/\D/g,"");
+if(senha.value!=confirmaSenha.value){
+    erros.push('Senhas diferentes');
 }
 
-// valida campos selecionados
-idade.oninput = soNumeros;
-cpf.oninput = soNumeros;
-telefono.oninput = soNumeros;
 
+    erros.forEach(erro =>{
+        exibeErros.innerHTML +=erro + "<br>";
+});
+}
+
+// idade.oninput = function (){
+//     this.value = this.value.replace(\/D/g,"");
+// };
+
+
+// cpf.oninput = function(){
+//     this.value = this.value.replace(\/D/g,"");
+// }
+
+// telefone.oninput = function () = {
+//     this.value = this.value.replace(\/D/g,"")
+// }
