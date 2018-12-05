@@ -85,5 +85,5 @@
 			<div class="clearfix"></div>
 		</div>
 
-
+		<script> src= "/js/validacao.js"</script>
     @stop
