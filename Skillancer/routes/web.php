@@ -38,6 +38,8 @@ Route::get('/projeto/exibir/{id}', 'ProjetoController@exibirProjeto');
 Route::get('/projetos_freela', 'ProjetosfreelaController@exibirTodosProjetos');
 Route::get('/projetosfreela/exibir/{id}', 'ProjetosfreelaController@exibirProjeto');
 
+Route::post('/buscar-projetos', 'PesquisarController@pesquisar');
+
 //pag para exibir todos os freelancer
 Route::get('/freela_todos', 'FreelaController@exibirTodosFreelancers');
 Route::get('/Freela/exibir/{id}', 'FreelaController@exibirFreelancer');
