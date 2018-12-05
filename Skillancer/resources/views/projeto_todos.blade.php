@@ -17,10 +17,11 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <form action="" method="post">
+              <form action="/buscar-projetos" method="post">
+                {{ csrf_field() }}
                 <label for="busca">Buscar</label>
                 <div class="container">
-                  <input type="search" id="busca" name="palavra" />
+                  <input type="text" id="busca" name="busca" />
                   <button type="submit">OK</button>
                 </div>
               </form>
