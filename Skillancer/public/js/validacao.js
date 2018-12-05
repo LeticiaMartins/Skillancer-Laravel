@@ -44,3 +44,4 @@ function soNumeros(){
 idade.oninput = soNumeros;
 cpf.oninput = soNumeros;
 telefono.oninput = soNumeros;
+

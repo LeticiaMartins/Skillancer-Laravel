@@ -6,6 +6,7 @@ body {
    background-image: url("../img/mesaecafe.jpg");
     overflow-x: hidden;
     font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
   }
 
   label {
@@ -22,7 +23,7 @@ body {
     box-shadow:1px 14px 43px black;
     z-index: 9000;
     transition: box-shadow 1s;
-        padding-right: 0;
+    padding-right: 0;
     padding-left: 0;
     padding-bottom: 0;
   }
@@ -137,6 +138,10 @@ body {
     color: #fed136;
   }
 
+  .row {
+    margin-top: 20px;
+  }
+  
   @media (min-width: 992px) {
     #mainNav {
       padding-top: 25px;

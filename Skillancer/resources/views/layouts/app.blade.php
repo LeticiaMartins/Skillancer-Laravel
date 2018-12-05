@@ -36,7 +36,7 @@
     }
 
     a{
-      color: #fed136;
+      color: #212529;
     }
 
     img.big-logo{
