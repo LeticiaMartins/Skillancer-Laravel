@@ -11,6 +11,11 @@
 
 body{
   background-imagem: url('fundo-total.jpg') !important;
+
+}
+
+.inner.fundo{
+	margin-top: 80px;
 }
 
 .image-holder{
@@ -55,6 +60,10 @@ body{
 
 .btn.btn-primary{
 	margin-left: 65px;
+}
+
+textarea.form-control{
+	height: 94px;
 }
 
 </style>
@@ -108,7 +117,7 @@ body{
 
 	       <div class="form-group row mb-0 box">
 	         <div class="col-md-8 offset-md-4 box1">
-	            <button type="submit" class="btn btn-primary">Confirmar</button>
+	            <button type="submit" class="btn btn-primary">Confirmar edição</button>
            </div>
          </div>
   	 	 </form>

@@ -5,8 +5,10 @@
 
     <div class="container">
       <div class="projeto-exibir">
+        @if($projeto->fk_idUser == Auth::id())
         <a href= "/projeto/editar/{{ $projeto->id_projeto }}" class="btn btn-default">Editar</a>
         <a href= "/projeto/deletar/{{ $projeto->id_projeto }}" class="btn btn-default">Deletar</a>
+        @endif
         <h4 class="text-uppercase">{{$projeto->titulo}}</h4>
         <p class="item-intro text-muted">Hipsters.pano Camisaria</p>
 
