@@ -1,8 +1,3 @@
-
-
-
-
-
 @extends('layouts.app')
 
 @section('css-custom', '/css/cadastro.css')
@@ -32,6 +27,7 @@
 <div class="container bg">
     <div class="row justify-content-center  ">
         <div class="col-md-8 box1">
+
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
@@ -90,5 +86,4 @@
         </div>
     </div>
 </div>
-
 @stop
