@@ -100,3 +100,5 @@
 <script src="/js/validacao.js"></script>
 
     @stop
+
+

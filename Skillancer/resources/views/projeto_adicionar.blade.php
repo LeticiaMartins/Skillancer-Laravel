@@ -22,21 +22,21 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
 
-                    <h2 class="title">conte mais sobre seu projeto</h2>
+                    <h2 class="title">Conte mais sobre seu projeto</h2>
 
                     <form action="/projeto/adicionar" method="POST"  enctype="multipart/form-data">
 
                       {{-- csrf field --}}
                       @csrf
                         <div class="input-group">
-                        <h4>nome do projeto</h4>
+                        <h4>Nome do Projeto</h4>
                         <br>
-                            <input class="input--style-1" type="text" placeholder="nome do projeto se houver" name="titulo" required>
+                            <input class="input--style-1" type="text" placeholder="nome do projeto" name="titulo" required>
                         </div>
                         <br>
 
                         <div class="form-group">
-                                <h4 for="exampleSelect2">tipo se site se houver</h4>
+                                <h4 for="exampleSelect2">Tipo se site se houver</h4>
                                 <br>
 
                                 <select multiple class="form-control" id="exampleSelect2" name= "tipo_servico" required>
@@ -50,7 +50,7 @@
                         <br><br>
 
                             <div class="form-group">
-                                    <h4 for="comment">fale mais sobre seu projeto</h4>
+                                    <h4 for="comment">Fale mais sobre seu projeto</h4>
                                     <br>
                                     <div class="form-group">
 
@@ -59,7 +59,7 @@
                         <br><br><br>
 
                             <div class="form-group">
-                              <h4 for="exampleFormControlFile1">faça o upload da foto de capa seu projeto</h4>
+                              <h4 for="exampleFormControlFile1">Faça o upload da foto de capa seu projeto</h4>
                               <br>
                               <input type="file" class="form-control-file" id="exampleFormControlFile1" name="arquivo">
                             </div>

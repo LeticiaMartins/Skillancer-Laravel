@@ -6,13 +6,17 @@
     font-family: 'Montserrat', sans-serif;
     padding-top: 54px;
     color: #302D29;
-    background-color: #f3eea7;
-    /* background-image: url("/../img/textured_paper.png"); */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/../img/textured_paper.png");
+    background-attachment: fixed;
+
 }
 @media (min-width:992px) {
     body {
     padding-top: 0;
-    padding-left: 17rem;
 }
 }h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', Arial, sans-serif, 'Apple Color Emoji';
@@ -33,7 +37,7 @@ h3 {
 }
 p.lead {
     margin-top: 50px;
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
     font-weight: 400;
 }
 

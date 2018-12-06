@@ -10,23 +10,25 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">projetos</h2>
-            <h3 class="section-subheading text-muted">Veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolverorxs ideal para você</h3>
+            <h3 class="section-subheading text-muted">Veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolvedor ideal para você</h3>
           </div>
         </div>
 
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <form action=" " method="post">
+              <form action="/buscar-projetos" method="post">
+                {{ csrf_field() }}
                 <label for="busca">Buscar</label>
                 <div class="container">
-                  <input type="search" id="busca" name="q">
+                  <input type="text" id="busca" name="busca" />
                   <button type="submit">OK</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
+
 
         <div class="row">
             @foreach ($listaDeProjetos as $projeto)

@@ -1,4 +1,3 @@
-
 let email = document.getElementById('email');
 let nome = document.getElementById('name');
 let form = document.getElementById('form');
