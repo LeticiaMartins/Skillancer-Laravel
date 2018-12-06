@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
+@section('css-custom', '/css/cadastro.css')
 @section('content')
+
+
+<!-- background-image: url("../image/cafe.jpg"); -->
+<!-- add background acima e centralizar o formulario -->
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -62,4 +69,4 @@
         </div>
     </div>
 </div>
-@endsection
+@stop
