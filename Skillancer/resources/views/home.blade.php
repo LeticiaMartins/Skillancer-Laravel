@@ -340,7 +340,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="www.linkedin.com/in/leticia-martins-b8026a16a">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                 </li>
