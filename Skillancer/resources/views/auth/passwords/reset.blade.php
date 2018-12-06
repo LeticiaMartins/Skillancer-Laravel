@@ -1,9 +1,37 @@
+
+
+
+
+
 @extends('layouts.app')
 
+@section('css-custom', '/css/cadastro.css')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+
+<style>
+
+.bg {
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position:center;
+ 
+ align-items: center;
+ background-image: url('./images/bg-registration-form-1.jpg');
+
+}
+
+.box1{
+    margin:40px !important;
+}
+
+</style>
+
+
+
+
+<div class="container bg">
+    <div class="row justify-content-center  ">
+        <div class="col-md-8 box1">
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
@@ -62,4 +90,5 @@
         </div>
     </div>
 </div>
-@endsection
+
+@stop

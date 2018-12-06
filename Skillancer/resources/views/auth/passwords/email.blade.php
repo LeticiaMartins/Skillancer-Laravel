@@ -1,9 +1,32 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+
+.bg {
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position:center;
+ 
+ align-items: center;
+ background-image: url('./images/bg-registration-form-1.jpg');
+
+}
+
+.box1{
+    margin:90px ;
+    
+}
+
+
+footer{
+    margin-bottom: 0px;
+}
+</style>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 box1">
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
@@ -18,7 +41,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label  for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
