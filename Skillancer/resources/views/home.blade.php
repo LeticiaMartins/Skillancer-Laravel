@@ -121,7 +121,7 @@
                     <i class="fas fa-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/camisas.jpg" alt="">
+                    <img class="img-fluid" src="{{$projeto->imagem_url}}" alt="">
                 </a>
                 <div class="portfolio-caption">
                   <h4>{{$projeto->titulo}}</h4>
@@ -340,7 +340,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="www.linkedin.com/in/leticia-martins-b8026a16a">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                 </li>

@@ -24,7 +24,7 @@
 
                     <h2 class="title">Conte mais sobre seu projeto</h2>
 
-                    <form action="/projeto/adicionar" method="POST"  enctype="multipart/form-data">
+                    <form id="add_projeto"  action="/projeto/adicionar" method="POST"  enctype="multipart/form-data">
 
                       {{-- csrf field --}}
                       @csrf
@@ -33,6 +33,11 @@
                         <br>
                             <input class="input--style-1" type="text" placeholder="nome do projeto" name="titulo" required>
                         </div>
+
+                                                <label for="estado">estado</label>
+                        <select name="estado" class="form-control" id="estado" ></select>
+                        <label for="cidade">cidade</label>
+                        <select name="cidade" class="form-control" id="cidade" ></select>
                         <br>
 
                         <div class="form-group">

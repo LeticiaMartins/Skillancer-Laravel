@@ -89,7 +89,7 @@
 						</div>
 
 						<div class="exibeErros"></div>
-						<button class="btn-submit" type="button">Enviar
+						<button class="btn-submit" type="submit">Enviar
 						</button>
 					</form>
 
@@ -97,7 +97,7 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
-<script src="/js/validacao.js"></script>
+	
 
     @stop
 

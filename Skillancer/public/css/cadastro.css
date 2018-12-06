@@ -1,9 +1,10 @@
 @font-face {
-  font-family: "Poppins-Regular";
-  src: url("/../fonts_cadastro/poppins/Poppins-Regular.ttf"); }
+  font-family: "Montserrat-Regular";
+  src: url("/../fonts/fonts_cadastro/montserrat/Montserrat-Regular.ttf"); }
 @font-face {
-  font-family: "Poppins-SemiBold";
-  src: url("/../fonts_cadastro/poppins/Poppins-SemiBold.ttf"); }
+  font-family: "Montserrat-Regular";
+  src: url("/../fonts/fonts_cadastro/montserrat/Montserrat-Regular.ttf"); }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -12,14 +13,15 @@
 body {
   background-position: center;
   background-size: cover;
-  background-image: url('/images_cadastro/bg-registration-form-1.jpg');
-  font-family: "Poppins-Regular";
+  background-color: #f8f9fa;
+  /* background-image: url('/images_cadastro/bg-registration-form-1.jpg'); */
+  font-family: "Montserrat-Regular";
   color: #333;
   font-size: 13px;
   margin: 0; }
 
 input, textarea, select, button {
-  font-family: "Poppins-Regular";
+  font-family: "Montserrat-Regular";
   color: rgb(54, 163, 182);
   font-size: 13px; }
 
@@ -62,7 +64,7 @@ a:hover {
   .inner h3 {
     text-transform: uppercase;
     font-size: 25px;
-    font-family: "Poppins-SemiBold";
+    font-family: "Montserrat-Regular";
     text-align: center;
     margin-bottom: 28px; }
 
@@ -93,19 +95,19 @@ a:hover {
   .form-control::-webkit-input-placeholder {
     font-size: 13px;
     color: #333;
-    font-family: "Poppins-Regular"; }
+    font-family: "Montserrat-Regular"; }
   .form-control::-moz-placeholder {
     font-size: 13px;
     color: #333;
-    font-family: "Poppins-Regular"; }
+    font-family: "Montserrat-Regular"; }
   .form-control:-ms-input-placeholder {
     font-size: 13px;
     color: #333;
-    font-family: "Poppins-Regular"; }
+    font-family: "Montserrat-Regular"; }
   .form-control:-moz-placeholder {
     font-size: 13px;
     color: #333;
-    font-family: "Poppins-Regular"; }
+    font-family: "Montserrat-Regular"; }
 
 select {
   -moz-appearance: none;
@@ -116,7 +118,9 @@ select {
     display: none; }
 
 button {
-  border: none;
+  font-weight: 800 !important;
+  border:none !important;
+  border-radius: 10px;
   width: 164px;
   height: 51px;
   margin: auto;
@@ -126,14 +130,15 @@ button {
   align-items: center;
   justify-content: center;
   padding: 0;
-  background: #333;
-  font-size: 15px;
+  background:#fed136;
+  font-size: 20px;
   color: #fff;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
+  
   button i {
     margin-left: 10px;
     -webkit-transform: translateZ(0);
