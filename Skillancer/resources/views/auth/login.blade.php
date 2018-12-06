@@ -23,7 +23,8 @@
 }
 .box1 a{
 	position: relative;
-	left: -14px;
+    left: -14px;
+    font-size: 12px;
 }
 
 
@@ -84,11 +85,7 @@
                 <div class="form-group row">
                     <div class="col-md-6 offset-md-4">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                            <label class="form-check-label" for="remember">
-                                {{ __('Remember Me') }}
-                            </label>
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}><label class="form-check-label" for="remember">{{('Lembrar')}}</label>
                         </div>
                     </div>
                 </div>
@@ -96,11 +93,11 @@
                 <div class="form-group row mb-0 box">
                     <div class="col-md-8 offset-md-4 box1">
                         <button type="submit" class="btn btn-primary">
-                            {{ __('Login') }}
+                            {{('Login')}}
                         </button>
 
                         <a class="btn btn-link" href="{{ route('password.request') }}">
-                            {{ __('Forgot Your Password?') }}
+                            {{('Forgot Your Password?')}}
                         </a>
                     </div>
                 </div>
