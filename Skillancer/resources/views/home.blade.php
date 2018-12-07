@@ -277,7 +277,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="rounded-circle" src="img/mesalogin.jpg" alt="" width="150" height= "150">
+              <img class="rounded-circle" src="images/nathalia.jpg" alt="">
               <h4>Natália Lira</h4>
               <p class="text-muted">Desenvolvedora</p>
               <ul class="list-inline social-buttons">
@@ -301,7 +301,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="rounded-circle" src="img/paocao.jpg" alt="">
+              <img class="rounded-circle" src="images/luana.jpg" alt="">
               <h4>Luana Maruya</h4>
               <p class="text-muted">Desenvolvedora</p>
               <ul class="list-inline social-buttons">
@@ -325,8 +325,8 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/filhote.jpg" alt="">
-              <h4>Lectícia Martins</h4>
+              <img class="mx-auto rounded-circle" src="images/leticia.jpg" alt="">
+              <h4>Leticia Martins</h4>
               <p class="text-muted">Desenvolvedora</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
@@ -350,9 +350,9 @@
         </div>
         <div class="col-sm-4">
             <div class="team-member">
-              <img class="rounded-circle" src= "" alt="">
+              <img class="rounded-circle" src= "images/bruno.jpg" alt="">
               <h4>Bruno Alves</h4>
-              <p class="text-muted">Desenvolvedora</p>
+              <p class="text-muted">Desenvolvedor</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
