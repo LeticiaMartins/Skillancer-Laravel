@@ -87,7 +87,11 @@
 							<input id="password-confirm" type="password" placeholder="Confirmar Senha" class="form-control" name="password_confirmation" required>
 							<i class="zmdi zmdi-lock"></i>
 						</div>
-
+						<div class="form-group">
+							<p>Adicione sua foto de perfil:</p>
+							<input type="file" class="form-control-file" id="exampleFormControlFile1" name="arquivo">
+							<i class="zmdi zmdi-lock"></i>
+						</div>
 						<div class="exibeErros"></div>
 						<button class="btn-submit" type="submit">Enviar
 						</button>
@@ -97,8 +101,6 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
-	
+
 
     @stop
-
-
