@@ -10,7 +10,7 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
-    background-image: url("/../img/textured_paper.png");
+    background-color: #f8f9fa;
     background-attachment: fixed;
 
 }

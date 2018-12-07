@@ -10,11 +10,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">projetos</h2>
-<<<<<<< HEAD
-            <h4 class="section-subheading text-muted">Veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolverorxs ideal para você</h4>
-=======
-            <h3 class="section-subheading text-muted">Veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolvedor ideal para você</h3>
->>>>>>> f2c205bf00408a5061dde284dba39259b85f79b4
+            <h4 class="section-subheading text-muted"></h4>
           </div>
         </div>
 
@@ -23,10 +19,10 @@
             <div class="col-lg-12 text-center">
               <form action="/buscar-projetos" method="post">
                 {{ csrf_field() }}
-                <label for="busca">Buscar</label>
+                <label for="busca"></label>
                 <div class="container">
                   <input type="text" id="busca" name="busca" />
-                  <button type="submit">OK</button>
+                  <button type="submit">Buscar</button>
                 </div>
               </form>
             </div>
