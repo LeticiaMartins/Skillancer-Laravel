@@ -8,7 +8,7 @@
 
           <div class="intro-lead-in">Skillancers<img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div>
           <div class="intro-heading text-uppercase">O FREELA IDEAL PARA VOCE</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about"> Passo a passo </a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">fale com a gente</a>
         </div>
       </div>
     </header>
@@ -415,7 +415,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Fale com a Skillancers</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">A qualquer momento, não hesite em entrar em contato.</h3>
           </div>
         </div>
         <div class="row">
