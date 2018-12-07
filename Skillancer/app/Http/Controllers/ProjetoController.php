@@ -37,7 +37,7 @@ class ProjetoController extends Controller
     if (empty($arquivo)) {
 
       abort(400, 'Nenhum arquivo foi enviado');
-  
+
     }
     // salvando
     $nomePasta = 'uploads';
@@ -98,7 +98,7 @@ class ProjetoController extends Controller
   public function exibirProjeto($id){
     $projeto = Projeto::find($id);
     $cliente = User::find($projeto->fk_idUser);
-    return view('projeto_id')->with('projeto', $projeto)->with('cliente', $cliente->name);
+    return view('projeto_id')->with('projeto', $projeto)->with('cliente', $cliente->username);
   }
 
 }

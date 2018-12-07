@@ -69,8 +69,9 @@ body {
 
   section h3.section-subheading {
     font-style: normal !important;
-    color: #212529 !important;
     text-shadow:  
+    color: #f0efdd !important;
+    text-shadow:
     font-size: 35px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -149,7 +150,7 @@ body {
   .row {
     margin-top: 20px;
   }
-  
+
   @media (min-width: 992px) {
     #mainNav {
       padding-top: 25px;
