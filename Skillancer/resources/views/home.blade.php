@@ -115,7 +115,7 @@
         <div class="row">
           @foreach ($listaDeProjetos as $projeto)
               <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                <a class="portfolio-link"  href="projeto/exibir/{{$projeto->id_projeto}}">
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
                     <i class="fas fa-plus fa-3x"></i>
@@ -469,23 +469,20 @@
                 <div class="modal-body">
 
                   <!-- detalhes do projeto -->
-                  <h4 class="text-uppercase">e-commerce/camisaria</h4>
-                  <p class="item-intro text-muted">Hipsters.pano Camisaria</p>
-
-                  <img class="primeira img-thumbnail rounded float-left" src= "img/jeans.png" alt="" width= "250" height= "320">
-                  <img class="segunda img-thumbnail rounded float-right" src= "img/xadrez.jpg" alt="" width= "360" height= "260">
-                  <img class="terceira img-thumbnail rounded float-right" src= "img/roupas.jpg" alt="" width= "340" height= "340">
-                  <img class="quarta img-thumbnail rounded float-left" src= "img/sapato.jpg" alt="" width= "350" height= "270">
-
-
-
-                  <div class= "textao">
-                  <p>Vamos oferecer camisas sob-medida para todo Brasil. Vamos trabalhar com uma vasta gama de combinações, que permitem total liberdade para que o cliente crie a camisa que mais se adeque ao seu estilo. A partir da obtenção de suas medidas, através de um prático procedimento online, a camisa é confeccionada respeitando a forma do corpo, minimizando imperfeições e acentuando atributos positivos.</p>
-                  <ul class="list-inline">
-                    <li>Data da publicação: 15/10/2018</li>
-                    <li>Cliente: MiTavares</li>
-                    <li>Categoria: E-commerce de vestuário</li>
-                  </ul>
+                  <div class="container center">
+                    <div class="projeto-exibir">
+                      <h4 class="text-uppercase text-center">{{$projeto->titulo}}</h4>
+                        <p class="item-intro text-muted text-center">{{$projeto->descricao}}</p>
+                          <img class="primeira img-thumbnail rounded mx-auto d-block" src= "{{$projeto->imagem_url}}" alt="" width= "500" height= "500">
+                          <br>
+                        <div class= "textao">
+                          <ul class="list-inline">
+                            <li>Data da publicação: 15/10/2018</li>;
+                            <li>Categoria: {{$projeto->tipo_servico}}</li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     FECHAR</button>
