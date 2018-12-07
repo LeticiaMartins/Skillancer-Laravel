@@ -275,7 +275,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-3 col-lg-3">
             <div class="team-member">
               <img class="rounded-circle" src="images/nathalia.jpg" alt="">
               <h4>Natália Lira</h4>
@@ -299,7 +299,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3 col-lg-3">
             <div class="team-member">
               <img class="rounded-circle" src="images/luana.jpg" alt="">
               <h4>Luana Maruya</h4>
@@ -323,7 +323,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3 col-lg-3">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="images/leticia.jpg" alt="">
               <h4>Leticia Martins</h4>
@@ -347,8 +347,7 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
+          <div class="col-sm-3 col-lg-3">
             <div class="team-member">
               <img class="rounded-circle" src= "images/bruno.jpg" alt="">
               <h4>Bruno Alves</h4>
@@ -373,6 +372,8 @@
             </div>
           </div>
       </div>
+        </div>
+        
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
