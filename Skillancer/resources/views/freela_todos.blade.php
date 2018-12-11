@@ -4,13 +4,19 @@
 @section('content')
 
     {{ $listaDeFreelancers->links() }}
+    <style>
+    h3{
+    color:#212529;
+    }
+    
+    </style>
 
     <section id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Freelancer</h2>
-            <h3 class="section-subheading text-muted">Veja todos os freelancers</h3>
+            <h2 class="section-heading text-uppercase">nosso time</h2>
+            <h3 class="section-subheading text-muted">Conheça todos os freelancers</h3>
           </div>
         </div>
 
@@ -18,10 +24,9 @@
           <div class="row">
             <div class="col-lg-12 text-center">
               <form action=" " method="post">
-                <label for="busca">Buscar</label>
                 <div class="container">
                   <input type="search" id="busca" name="q">
-                  <button type="submit">OK</button>
+                  <button type="submit">Buscar</button>
                 </div>
               </form>
             </div>

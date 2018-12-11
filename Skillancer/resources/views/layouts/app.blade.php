@@ -25,7 +25,9 @@
     <!-- styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="/css/agency.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/agency.css">
+    <link href="/css/agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/agency.css" title="standard">
+    <link rel="stylesheet" href="/css/agency-alternativo.css" title="alternativo">
     <link rel="stylesheet" href="@yield('css-custom')">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -195,6 +197,11 @@ crossorigin="anonymous"></script>
                   </div>
                 </div>
               </div>
+              <ul>
+                alterar tema
+                <li><a href="#" onclick="setActiveStyleSheet('standard'); return false;">Default</a></li>
+                <li><a href="#" onclick="setActiveStyleSheet('alternativo'); return false;">Ux</a></li>
+              </ul>
             </footer>
             <!-- Bootstrap/JavaScript -->
             <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
