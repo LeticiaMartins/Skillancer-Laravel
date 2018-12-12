@@ -53,6 +53,14 @@ if($('#form').length > 0){
 //     this.value = this.value.replace(\/D/g,"")
 // }
 
+// var inputBusca = document.getElementById('busca');
+
+
+// inputBusca.addEventListener('keydown', runEventdoinput);
+
+// function runEventdoinput(e){
+//     document.getElementById('output').innerHTML = '<h3>' +e.target.value+ '</h3>';
+// }
 
 
 
@@ -121,15 +129,32 @@ function runFunction3(e){
 }
 
 
-var inputBusca = document.getElementById('busca');
-var output = document.getElementById('output');
 
-inputBusca.addEventListener('keydown', runEvent);
+var body1 = document.getElementById('mainNav');
+var  alerta = document.getElementById('alerta');
+var botaos = document.getElementById('simbotao');
 
-function runEvent(e){
-    document.getElementById('output').innerHTML = '<h3>' +e.target.value+ '</h3>';
+body1.addEventListener('mousemove', jaVai);
+alerta.addEventListener('click' , certeza);
+botaos.addEventListener('click', sair);
+
+function jaVai(e){
+
+    console.log( 'event type:' +e.type);
+    console.log(e.offsetX);
+
+    if(e.offsetX > 1098){
+        alerta.style.display = 'block';
+    }
 }
 
+function certeza(e){
+    alerta.style.display = 'none';
+}
+
+function sair(e){
+    alerta.style.display = 'none';
+}
 }
 
 

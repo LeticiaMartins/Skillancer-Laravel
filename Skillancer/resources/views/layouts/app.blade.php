@@ -50,6 +50,57 @@
 
     <style>
 
+    #alerta{ width: 300px;
+    height: auto;
+    background-color: lightblue;
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    position: absolute;
+    right: 20px;
+    border-radius: 20px;
+    animation-name: abadosair;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    display:none;
+    box-shadow: 8px 65px 92px 0 black;
+    transition: width 2s;
+}
+
+@keyframes abadosair{ 
+
+0%{
+ 
+ transform: scale(0.0);
+ }
+ 30%{
+
+ transform: scale(0.3);
+ }
+  50%{
+ transform: scale(0.4);
+  }
+  70%{
+ transform: scale(0.7);
+  }
+ 100%{
+ transform: scale(1);
+}
+}
+#alerta:hover{
+ width:350px;
+}
+
+
+}
+
+#simbotao{
+ 
+  margin:5px;
+  
+}
+
+
     #cores{
       text-align:center;
     }
@@ -98,7 +149,7 @@ crossorigin="anonymous"></script>
   </head>
 
   <body id="page-top">
-
+   
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navtroca" id="mainNav">
       <div class="container" id="mainNav1">
@@ -161,7 +212,10 @@ crossorigin="anonymous"></script>
         </div>
       </div>
     </nav>
-
+    <div id="alerta">
+   <h1>Poxa já vai embora?</h1>
+    <button class="btn btn-primary" id="simbotao">Sim</button>
+   </div>
     
             @yield('content')
           
