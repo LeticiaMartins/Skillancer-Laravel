@@ -116,8 +116,8 @@ function runFunction3(e){
     document.body.style.backgroundColor = "white";
     document.getElementById('mainNav1').style.backgroundColor = "#435058";
     document.getElementById('cores').style.backgroundColor = "lightgray";
-    document.getElementById('portfolio').style.backgroundColor = "lightgray";
-    document.getElementById('team').style.backgroundColor = "lightgray";
+    document.getElementById('portfolio').style.backgroundColor = "white";
+    document.getElementById('team').style.backgroundColor = "white";
 }
 
 
