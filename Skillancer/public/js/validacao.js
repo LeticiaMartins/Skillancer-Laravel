@@ -121,14 +121,14 @@ function runFunction3(e){
 }
 
 
-// var inputBusca = document.getElementById('busca');
-// // var output = document.getElementById('output');
+var inputBusca = document.getElementById('busca');
+var output = document.getElementById('output');
 
-// inputBusca.addEventListener('keydown', runEvent);
+inputBusca.addEventListener('keydown', runEvent);
 
-// function runEvent(e){
-//     document.getElementById('output').innerHTML = '<h3>' +e.target.value+ '</h3>';
-// }
+function runEvent(e){
+    document.getElementById('output').innerHTML = '<h3>' +e.target.value+ '</h3>';
+}
 
 }
 
