@@ -25,7 +25,9 @@
     <!-- styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="/css/agency.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/agency.css">
+    <link href="/css/agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/agency.css" title="standard">
+    <link rel="stylesheet" href="/css/agency-alternativo.css" title="alternativo">
     <link rel="stylesheet" href="@yield('css-custom')">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -108,7 +110,7 @@ crossorigin="anonymous"></script>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            
+
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/projeto_todos">projetos</a>
             </li>
@@ -205,6 +207,11 @@ crossorigin="anonymous"></script>
   
                 </div>
               </div>
+              <ul>
+                alterar tema
+                <li><a href="#" onclick="setActiveStyleSheet('standard'); return false;">Default</a></li>
+                <li><a href="#" onclick="setActiveStyleSheet('alternativo'); return false;">Ux</a></li>
+              </ul>
             </footer>
             <div style="width 300px;height:300px;background-color:lightgrey;" id="cores" class="custom-control custom-radio">
             <label><h2>Escolha a cor do Fundo<h2></label><br>
@@ -232,5 +239,5 @@ crossorigin="anonymous"></script>
         <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
         <script src="/js/validacao.js"></script>
         <script src="/js/estados.js"></script>
-          </body>
-        </html>
+      </body>
+    </html>
