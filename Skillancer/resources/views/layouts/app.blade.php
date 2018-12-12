@@ -48,6 +48,10 @@
 
     <style>
 
+    #cores{
+      text-align:center;
+    }
+
     img.logo{
       width: 45px;
       height:45px;
@@ -94,9 +98,10 @@ crossorigin="anonymous"></script>
   <body id="page-top">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navtroca" id="mainNav">
+      <div class="container" id="mainNav1">
         <a class="navbar-brand js-scroll-trigger" href="/"><img class = "logo" src = "/img/logos/logo.png" alt = "Skillancers"></a>
+        <a class="btn btn-primary" href="#cores" >Fundo</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -154,9 +159,13 @@ crossorigin="anonymous"></script>
         </div>
       </div>
     </nav>
+
+    
             @yield('content')
+          
             <!-- footer -->
             <footer>
+
               <div class="container">
                 <div class="row">
                   <div class="col-md-4">
@@ -193,9 +202,17 @@ crossorigin="anonymous"></script>
                       </li>
                     </ul>
                   </div>
+  
                 </div>
               </div>
             </footer>
+            <div style="width 300px;height:300px;background-color:lightgrey;" id="cores" class="custom-control custom-radio">
+            <label><h2>Escolha a cor do Fundo<h2></label><br>
+  <button class="btn btn-primary azul" id="fundoazul">Azul</button>
+  <button class="btn btn-primary rosa" id="fundored">Rosa</button>
+  <button class="btn btn-primary verde" id="fundogreen">Verde</button>
+  <button class="btn btn-primary padrao" id="padrao">Padrão</button>
+</div>
             <!-- Bootstrap/JavaScript -->
             <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
