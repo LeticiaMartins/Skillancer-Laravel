@@ -44,6 +44,14 @@
     margin-top: .3rem;
     margin-left: -1.25rem;
 }
+
+.login{
+    color:#435058;
+    font-family:'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    font-size: 30px;
+}
+
 </style>
 
 <div class="wrapper">
@@ -55,7 +63,7 @@
 
         <form method="POST" action="{{ route('login') }}">
                 @csrf
-
+                <label class= "login">login</label>
                 <div class="form-group row">
 
                     <div class="col-md-10">
@@ -97,11 +105,12 @@
                         </button>
 
                         <a class="btn btn-link" href="{{ route('password.request') }}">
-                            {{('Forgot Your Password?')}}
+                            {{('Esqueceu a senha?')}}
                         </a>
                     </div>
                 </div>
             </form>
     </div>
+
 </div>
   @stop
