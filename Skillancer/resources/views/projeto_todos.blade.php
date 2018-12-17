@@ -43,9 +43,8 @@
             </a>
             <div class="portfolio-caption">
               <h4>{{$projeto->titulo}}</h4>
-              @if ($projeto->updated_at)
-                <small>(atualizado {{ $projeto->updated_at->diffForHuman() }})</small>
-              @endif
+                <small>(atualizado {{ $projeto->updated_at }})</small>
+
               <p class="text-muted">{{$projeto->descricao}}</p>
             </div>
           </div>
