@@ -197,11 +197,11 @@ crossorigin="anonymous"></script>
                   </div>
                 </div>
               </div>
-              <ul>
+              <!-- <ul>
                 alterar tema
                 <li><a href="#" onclick="setActiveStyleSheet('standard'); return false;">Default</a></li>
                 <li><a href="#" onclick="setActiveStyleSheet('alternativo'); return false;">Ux</a></li>
-              </ul>
+              </ul> -->
             </footer>
             <!-- Bootstrap/JavaScript -->
             <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
