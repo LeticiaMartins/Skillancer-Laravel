@@ -11,7 +11,7 @@
             <br>
           <div class= "textao">
             <ul class="list-inline">
-              <li>Data da publicação: 15/10/2018</li>
+              <li>Data da publicação: {{$projeto->created_at}}</li>
               <li>Cliente: {{$cliente}}</li>
               <li>Categoria: {{$projeto->tipo_servico}}</li>
             </ul>
