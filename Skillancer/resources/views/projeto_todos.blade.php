@@ -22,7 +22,9 @@
                 <label for="busca"></label>
                 <div class="container">
                   <input type="text" id="busca" name="busca" />
+                  
                   <button type="submit">Buscar</button>
+                  <div id="output"></div>
                 </div>
               </form>
             </div>

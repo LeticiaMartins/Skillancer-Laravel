@@ -103,7 +103,7 @@
     </section>
 
     <!-- projetos e equipe -->
-    <section class="bg-light" id="portfolio">
+    <section id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -266,7 +266,7 @@
     </section>
 
     <!-- equipe -->
-    <section class="bg-light" id="team">
+    <section  id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -678,7 +678,13 @@
               </div>
             </div>
           </div>
+          
         </div>
       </div>
+      
     </div>
+
+    
+
+
 @stop
