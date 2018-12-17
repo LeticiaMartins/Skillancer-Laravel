@@ -11,13 +11,13 @@
             <br>
           <div class= "textao">
             <ul class="list-inline">
-              <li>Data da publicação: 15/10/2018</li>
-              <li>Cliente: {{$cliente}}</li>
-              <li>Categoria: {{$projeto->tipo_servico}}</li>
+              <li><b>Data da publicação:</b> 15/10/2018</li>
+              <li><b>Cliente:</b> {{$cliente}}</li>
+              <li><b>Categoria:</b> {{$projeto->tipo_servico}}</li>
             </ul>
           @if($projeto->fk_idUser == Auth::id())
-          <a href= "/projeto/editar/{{ $projeto->id_projeto }}" class="btn btn-default">Editar</a>
-          <a href= "/projeto/deletar/{{ $projeto->id_projeto }}" class="btn btn-default">Deletar</a>
+          <a href= "/projeto/editar/{{ $projeto->id_projeto }}" class="btn btn-primary">Editar</a>
+          <a href= "/projeto/deletar/{{ $projeto->id_projeto }}" class="btn btn-danger">Deletar</a>
           @endif
           </div>
       </div>
