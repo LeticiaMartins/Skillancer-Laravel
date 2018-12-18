@@ -6,7 +6,7 @@
       <div class="container">
         <div class="intro-text">
 
-          <div class="intro-lead-in">Skillancers<img class="big-logo" src = "img/logos/logo.png" alt = "Skillancers"></div>
+          <div class="intro-lead-in">Skillancers<img class="big-logo img-fluid" src = "img/logos/logo.png" alt = "Skillancers"></div>
           <div class="intro-heading text-uppercase">O FREELA IDEAL PARA VOCE</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">fale com a gente</a>
         </div>
@@ -33,31 +33,31 @@
           <div class="carousel-inner">
 
             <div class="carousel-item active">
-              <img class="d-block w-100" src="img/glass.jpg" alt="First slide">
+              <img class="d-block w-100 img-fluid" src="img/glass.jpg" alt="First slide">
             </div>
 
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/kanbam.jpg" alt="Second slide">
+              <img class="d-block w-100 img-fluid" src="img/kanbam.jpg" alt="Second slide">
             </div>
 
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/reuniao.jpg" alt="Third slide">
+              <img class="d-block w-100 img-fluid" src="img/reuniao.jpg" alt="Third slide">
             </div>
 
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/mesa.jpg" alt="Third slide">
+              <img class="d-block w-100 img-fluid" src="img/mesa.jpg" alt="Third slide">
             </div>
 
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/adultos.jpg" alt="Third slide">
+              <img class="d-block w-100 img-fluid" src="img/adultos.jpg" alt="Third slide">
             </div>
 
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/product.jpg" alt="Third slide">
+              <img class="d-block w-100 img-fluid" src="img/product.jpg" alt="Third slide">
             </div>
 
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/sample.jpg" alt="Third slide">
+              <img class="d-block w-100 img-fluid" src="img/sample.jpg" alt="Third slide">
             </div>
 
           </div>
@@ -277,7 +277,7 @@
         <div class="row">
           <div class="col-sm-3 col-lg-3">
             <div class="team-member">
-              <img class="rounded-circle" src="images/nathalia.jpg" alt="">
+              <img class="rounded-circle img-fluid" src="images/nathalia.jpg" alt="">
               <h4>Natália Lira</h4>
               <p class="text-muted">Desenvolvedora</p>
               <ul class="list-inline social-buttons">
@@ -301,7 +301,7 @@
           </div>
           <div class="col-sm-3 col-lg-3">
             <div class="team-member">
-              <img class="rounded-circle" src="images/luana.jpg" alt="">
+              <img class="rounded-circle img-fluid" src="images/luana.jpg" alt="">
               <h4>Luana Maruya</h4>
               <p class="text-muted">Desenvolvedora</p>
               <ul class="list-inline social-buttons">
@@ -325,7 +325,7 @@
           </div>
           <div class="col-sm-3 col-lg-3">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="images/leticia.jpg" alt="">
+              <img class="mx-auto rounded-circle img-fluid" src="images/leticia.jpg" alt="">
               <h4>Leticia Martins</h4>
               <p class="text-muted">Desenvolvedora</p>
               <ul class="list-inline social-buttons">
@@ -349,7 +349,7 @@
           </div>
           <div class="col-sm-3 col-lg-3">
             <div class="team-member">
-              <img class="rounded-circle" src= "images/bruno.jpg" alt="">
+              <img class="rounded-circle img-fluid" src= "images/bruno.jpg" alt="">
               <h4>Bruno Alves</h4>
               <p class="text-muted">Desenvolvedor</p>
               <ul class="list-inline social-buttons">
@@ -474,7 +474,7 @@
                     <div class="projeto-exibir">
                       <h4 class="text-uppercase text-center">{{$projeto->titulo}}</h4>
                         <p class="item-intro text-muted text-center">{{$projeto->descricao}}</p>
-                          <img class="primeira img-thumbnail rounded mx-auto d-block" src= "{{$projeto->imagem_url}}" alt="" width= "500" height= "500">
+                          <img class="primeira img-thumbnail rounded mx-auto d-block img-fluid" src= "{{$projeto->imagem_url}}" alt="" width= "500" height= "500">
                           <br>
                         <div class= "textao">
                           <ul class="list-inline">
@@ -514,11 +514,11 @@
                   <h2 class="text-uppercase">Café Dog Friendly</h2>
                   <p class="item-intro text-muted">Cafésta!</p>
 
-                  <img class="primeira img-thumbnail rounded float-left" src= "img/bolo.jpg" alt="" width= "300" height= "250">
-                  <img class="segunda img-thumbnail rounded float-right" src= "img/apple.jpg" alt="" width= "300" height= "100">
-                  <img class="quarta img-thumbnail rounded float-left" src= "img/cocoa.jpg" alt="" width= "350" height= "270">
-                  <img class="quarta img-thumbnail rounded float-right" src= "img/baked.jpg" alt="" width= "250" height= "200">
-                  <img class="terceira img-thumbnail rounded float-right" src= "img/fofura.jpg" alt="" width= "200" height= "150">
+                  <img class="primeira img-thumbnail rounded float-left img-fluid" src= "img/bolo.jpg" alt="" width= "300" height= "250">
+                  <img class="segunda img-thumbnail rounded float-right img-fluid" src= "img/apple.jpg" alt="" width= "300" height= "100">
+                  <img class="quarta img-thumbnail rounded float-left img-fluid" src= "img/cocoa.jpg" alt="" width= "350" height= "270">
+                  <img class="quarta img-thumbnail rounded float-right img-fluid" src= "img/baked.jpg" alt="" width= "250" height= "200">
+                  <img class="terceira img-thumbnail rounded float-right img-fluid" src= "img/fofura.jpg" alt="" width= "200" height= "150">
 
                   <div class= "textao">
                   <p>Mais de 500m² destinados à convivência entre pessoas e cachorros, uma carta de cafés aprovadas pelos melhores baristas da cidade e guloseimas de fazer virar os olhinhos e procurar com o  focinho. Fazemos ativismo em defesa dos animais, buscamos tudo que pode melhorar a vida entre cães e pessoas, sim, somos um laboratório de experiências de coisas felizes com nossos amigos de 4 patas!</p>
@@ -557,9 +557,9 @@
                   <h2 class="text-uppercase">Causas Sociais/E-commerce de flores/Rede Social</h2>
                   <p class="item-intro text-muted">E Vejo Flores Em VC</p>
 
-                  <img class="primeira img-thumbnail rounded float-left" src= "img/flores1.jpg" alt="" width= "350" height= "410">
-                  <img class="segunda img-thumbnail rounded float-right" src= "img/vitima.jpg" alt="" width= "230" height= "200">
-                  <img class="terceira img-thumbnail rounded float-right" src= "img/flor.jpg" alt="" width= "300" height= "190">
+                  <img class="primeira img-thumbnail rounded float-left img-fluid" src= "img/flores1.jpg" alt="" width= "350" height= "410">
+                  <img class="segunda img-thumbnail rounded float-right img-fluid" src= "img/vitima.jpg" alt="" width= "230" height= "200">
+                  <img class="terceira img-thumbnail rounded float-right img-fluid" src= "img/flor.jpg" alt="" width= "300" height= "190">
 
                   <div class= "textao">
                   <p>Sororidade é nosso foco. Nosso projeto visa a conexão entre mulheres com o intuito de encorajar e fortalecer aquelas que sofrem violêcia doméstica. Fazer a denúncia de seu agressor e continuar o processo policial que é muitas vezes moroso e machista exige apoio e força. Através de um financiamneto coletivo mandamos flores a elas, em gratidão por dividirem sua história conosco e como um símbolo de sororidade e amor-próprio.</p>
