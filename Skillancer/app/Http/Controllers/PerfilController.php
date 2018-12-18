@@ -10,13 +10,13 @@ use App\User;
 
 class PerfilController extends Controller
 {
-    public function perfilDev($id_user){
+    public function perfilDev(){
       $freelancer = Freelancer::where('fk_Id_user', Auth::id())->first();
-      $User = User::find($id_user);
-      $nome = User::find($User->name);
-      $sobrenome = User::find($User->sobrenome);
-      $email = User::find($User->email);
+      $User = User::find(Auth::id());
+      $nome = $User->name;
+      $sobrenome = $User->sobrenome;
+      $email = $User->email;
 
-      return view("perfildev")->with('freelancer', $freelancer)->with('user', $User)->with('nome', $name)->with('sobrenome', $sobrenome)->with('email', $email);
+      return view("perfildev")->with('freelancer', $freelancer)->with('user', $User)->with('nome', $nome)->with('sobrenome', $sobrenome)->with('email', $email);
     }
 }
