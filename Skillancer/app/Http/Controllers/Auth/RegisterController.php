@@ -63,10 +63,31 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        if(isset($data['arquivo'])){
+
+          $arquivo = $data['arquivo'];
+
+          // salvando
+          $nomePasta = 'uploads';
+          $arquivo->storePublicly($nomePasta);
+          $caminho = public_path()."\\storage\\$nomePasta";
+          $nomeArquivo = $arquivo->getClientOriginalName();
+          // movendo
+          $arquivo->move($caminho, $nomeArquivo);
+
+          $fotoUrl = "/storage/uploads/".$nomeArquivo;
+        }else{
+          $fotoUrl = "/storage/uploads/default.jpg";
+
+        }
+
         return User::create([
+            'name' => $data['name'],
+            'sobrenome' => $data['sobrenome'],
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'imagem_url'=> $fotoUrl
         ]);
     }
 }
