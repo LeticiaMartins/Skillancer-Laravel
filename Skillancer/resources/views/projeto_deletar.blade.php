@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container delete-form">
 
 
-      <h1>Deletar Projeto</h1>
+      <h1>Deletar Projeto</h1><br>
 
       <form action="/projeto/deletar/{{ $projeto->id_projeto }}" method="POST">
 
         {{ csrf_field() }}
         {{ method_field('DELETE') }}
 
-        <b>Nome do Projeto</b>
-        <p>{{ $projeto->titulo }}</p>
+      <p><b>Nome do Projeto:</b> {{ $projeto->titulo }} </p><br>
 
-        <button type="submit">Deletar</button>
+      <button class="btn btn-danger" type="submit">Quero Deletar</button>
 
       </form>
 
