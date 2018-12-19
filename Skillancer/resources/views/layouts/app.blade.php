@@ -50,61 +50,6 @@
 
     <style>
 
-    #alerta{ width: 300px;
-    height: auto;
-    background-color: lightblue;
-    display: block;
-    text-align: center;
-    margin-top: 80px;
-    position: absolute;
-    right: 20px;
-    border-radius: 20px;
-    animation-name: abadosair;
-    animation-duration: 1s;
-    animation-fill-mode:forwards;
-    display:none;
-    box-shadow: 8px 65px 92px 0 black;
-    transition: width 2s;
-}
-
-@keyframes abadosair{ 
-
-0%{
- 
- transform: scale(0.0);
- }
- 30%{
-
- transform: scale(0.3);
- }
-  50%{
- transform: scale(0.4);
-  }
-  70%{
- transform: scale(0.7);
-  }
- 100%{
- transform: scale(1);
-}
-}
-#alerta:hover{
- width:350px;
-}
-
-
-}
-
-#simbotao{
- 
-  margin:5px;
-  
-}
-
-
-    #cores{
-      text-align:center;
-    }
-
     img.logo{
       width: 45px;
       height:45px;
@@ -149,12 +94,11 @@ crossorigin="anonymous"></script>
   </head>
 
   <body id="page-top">
-   
+
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navtroca" id="mainNav">
-      <div class="container" id="mainNav1">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/"><img class = "logo" src = "/img/logos/logo.png" alt = "Skillancers"></a>
-        <a class="btn btn-primary" href="#cores" >Fundo</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -183,7 +127,7 @@ crossorigin="anonymous"></script>
             @else
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <div class="img-profile" style="background-image: url('/../image/leticia.jpg')"></div>
+                    <div class="img-profile" style="background-image: url('{{  Auth::user()->imagem_url }}')"></div>
                     {{ Auth::user()->username }} <span class="caret"></span>
                     </a>
 
@@ -212,16 +156,9 @@ crossorigin="anonymous"></script>
         </div>
       </div>
     </nav>
-    <div id="alerta">
-   <h1>Poxa já vai embora?</h1>
-    <button class="btn btn-primary" id="simbotao">Sim</button>
-   </div>
-    
             @yield('content')
-          
             <!-- footer -->
             <footer>
-
               <div class="container">
                 <div class="row">
                   <div class="col-md-4">
@@ -258,22 +195,9 @@ crossorigin="anonymous"></script>
                       </li>
                     </ul>
                   </div>
-  
                 </div>
               </div>
-              <!-- <ul>
-                alterar tema
-                <li><a href="#" onclick="setActiveStyleSheet('standard'); return false;">Default</a></li>
-                <li><a href="#" onclick="setActiveStyleSheet('alternativo'); return false;">Ux</a></li>
-              </ul> -->
             </footer>
-            <div style="width 300px;height:300px;background-color:lightgrey;" id="cores" class="custom-control custom-radio">
-            <label><h2>Escolha a cor do Fundo<h2></label><br>
-  <button class="btn btn-primary azul" id="fundoazul">Azul</button>
-  <button class="btn btn-primary rosa" id="fundored">Rosa</button>
-  <button class="btn btn-primary verde" id="fundogreen">Verde</button>
-  <button class="btn btn-primary padrao" id="padrao">Padrão</button>
-</div>
             <!-- Bootstrap/JavaScript -->
             <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
