@@ -150,7 +150,7 @@ crossorigin="anonymous"></script>
             @else
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <div class="img-profile" style="background-image: url('/../image/leticia.jpg')"></div>
+                    <div class="img-profile" style="background-image: url('{{  Auth::user()->imagem_url }}')"></div>
                     {{ Auth::user()->username }} <span class="caret"></span>
                     </a>
 

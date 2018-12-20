@@ -7,7 +7,7 @@
 
     <section id="portfolio">
       <div class="container">
-        <div class="row">
+        <div class="row"> 
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase divText">projetos</h2>
             <h4 class="section-subheading text-muted"></h4>
@@ -22,7 +22,7 @@
                 <label for="busca"></label>
                 <div class="container">
                   <input type="text" id="busca" name="busca" />
-                  
+
                   <button type="submit">Buscar</button>
                   <div id="output"></div>
                 </div>

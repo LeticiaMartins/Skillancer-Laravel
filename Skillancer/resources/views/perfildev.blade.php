@@ -6,11 +6,11 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Leticia
-            <span class="text-primary">Martins</span>
+          <h1 class="mb-0">{{$nome}}
+            <span class="text-primary">{{$sobrenome}}</span>
           </h1>
           <div class="subheading mb-5">
-            <a href="mailto:leticia.martins@gmail.com">leticia.martins@gmail.com</a>
+            <a href="mailto:{{$email}}">{{$email}}</a>
             <br>
             <br>
             <a class="btn btn-primary btn-x2 text-uppercase js-scroll-trigger" href="/projetos_freela">Aplicar para um projeto</a>

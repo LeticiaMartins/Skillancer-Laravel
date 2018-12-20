@@ -21,7 +21,7 @@
 						<img src="/images_cadastro/homem.jpg" alt="">
 					</div>
 
-					<form id="form" name= "signup" action="{{ route('register') }}" method= "POST">
+					<form id="form" name= "signup" action="{{ route('register') }}" method= "POST" enctype="multipart/form-data">
 						@csrf
 						<h1>crie sua conta</h1>
 
@@ -89,7 +89,7 @@
 							<label>Adicione sua foto de perfil:</label>
 						<div class="form-group">
 							<br><br><br><br>
-							<input type="file">
+							<input type="file" name="arquivo">
 						</div>
 
 						<div class="exibeErros"></div>

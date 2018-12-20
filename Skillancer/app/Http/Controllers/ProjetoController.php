@@ -34,6 +34,7 @@ class ProjetoController extends Controller
     ]);
 
     $arquivo = $request->file('arquivo');
+    
     if (empty($arquivo)) {
 
       abort(400, 'Nenhum arquivo foi enviado');

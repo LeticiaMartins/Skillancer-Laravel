@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','username','sobrenome','cpf_cnpj'
+        'name', 'email', 'password','username','sobrenome', 'imagem_url'
     ];
 
     protected $primaryKey = 'id_user';
