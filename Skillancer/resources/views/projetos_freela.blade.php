@@ -44,6 +44,8 @@
                   <small>(atualizado {{ $projeto->updated_at }})</small>
 
                 <p class="text-muted">{{$projeto->descricao}}</p>
+                <a class="btn btn-primary btn-x2 text-uppercase js-scroll-trigger" href="/projetosfreela/aplicar">Aplicar</a>
+             </a>
               </div>
             </div>
           @endforeach
