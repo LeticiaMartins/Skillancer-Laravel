@@ -10,7 +10,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">projetos</h2>
-            <h3 class="section-subheading text-muted">Veja todos os projetos publicados e aplique para uma oportunidade.</h3>
+            <h2 class="section-subheading text-muted">Veja todos os projetos publicados e aplique para uma oportunidade.</h2>
           </div>
         </div>
 
@@ -44,6 +44,8 @@
                   <small>(atualizado {{ $projeto->updated_at }})</small>
 
                 <p class="text-muted">{{$projeto->descricao}}</p>
+                <a class="btn btn-primary btn-x2 text-uppercase js-scroll-trigger" href="/projetosfreela/aplicar">Aplicar</a>
+             </a>
               </div>
             </div>
           @endforeach

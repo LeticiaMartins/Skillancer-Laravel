@@ -86,6 +86,27 @@
       display: inline;
     }
 
+    #light-theme{
+    background-image: url(./favicon/logopreto.png);
+    background-position: center;
+    background-size: cover;
+    width: 33px;
+    height: 34px;
+    text-indent: -999px;
+    cursor:pointer;
+    
+    }
+
+    #portfolio{
+      background-color:#f8f9fa;
+    }
+
+    #portfolio .container .row .col-lg-12 h3.divText{
+    color: #435058;
+    }
+.tema{
+  background-color: #435058;
+}
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -96,9 +117,11 @@ crossorigin="anonymous"></script>
   <body id="page-top">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg tema fixed-top" id="mainNav">
+    
+      <div class="container" id="mains">
         <a class="navbar-brand js-scroll-trigger" href="/"><img class = "logo" src = "/img/logos/logo.png" alt = "Skillancers"></a>
+        <a id="light-theme" title="Tema Dark">Light</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>

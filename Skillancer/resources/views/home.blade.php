@@ -1,6 +1,12 @@
 @extends('layouts.app')
 @section('content')
 
+<style>
+ #team{
+   background-color:#f8f9fa;
+ }
+</style>
+
     <!-- header -->
     <header class="masthead">
       <div class="container">
@@ -18,7 +24,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">NOSSOS SERVIÇOS</h2>
+            <h2 class="section-heading text-uppercase divText">NOSSOS SERVIÇOS</h2>
 
           </div>
         </div>
@@ -79,36 +85,37 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">conexões</h4>
-            <p class="text-muted">Erguer pontes, conectar pessoas, estes são valores da Skillancers. Temos desenvolvedores qualificados e oferecemos suporte de especialistas em métodos ágeis</p>
+            <h4 class="service-heading divText">conexões</h4>
+            <p class=" divText">Erguer pontes, conectar pessoas, estes são valores da Skillancers. Temos desenvolvedores qualificados e oferecemos suporte de especialistas em métodos ágeis</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">personalização</h4>
-            <p class="text-muted">Sua plataforma do jeito que vc precisa, seja para coletar dados, analisar seu público ou otimizar seu SEO</p>
+            <h4 class="service-heading divText">personalização</h4>
+            <p class="divText">Sua plataforma do jeito que vc precisa, seja para coletar dados, analisar seu público ou otimizar seu SEO</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">ferramentas</h4>
-            <p class="text-muted">Acompanhe a construção do seu projeto através de um dashboard, por onde fica fácil analisar parte por parte e se organizar para os próximos passos do seu negócio</p>
+            <h4 class="service-heading divText">ferramentas</h4>
+            <p class="divText">Acompanhe a construção do seu projeto através de um dashboard, por onde fica fácil analisar parte por parte e se organizar para os próximos passos do seu negócio</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- projetos e equipe -->
-    <section class="bg-light" id="portfolio">
+    <section id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">projetos em fase de construção</h2>
-            <h3 class="section-subheading text-muted">três projetos, três propostas diferentes, veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolvedor ideal para você</h3>
+            <h3 class="section-subheading text-muted">três projetos, três propostas diferentes,<br>
+            veja como a publicação de um projeto na Skillancers fala muito sobre seu potencial...depois disso é só escolher o/a desenvolvedor ideal para você</h3>
           </div>
         </div>
 
@@ -134,8 +141,8 @@
         @endforeach
           <div class="row">
             <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">nosso time</h2>
-            <h3 class="section-subheading text-muted">vc é dev? se sim seja bem-vindo! conheça aqui um pouco dos profissionais que atuam na Skillancers</h3>
+            <h2 class="section-heading text-uppercase divText">nosso time</h2>
+            <h3 class="section-subheading divText">vc é dev? se sim seja bem-vindo! conheça aqui um pouco dos profissionais que atuam na Skillancers</h3>
           </div>
 
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -189,8 +196,8 @@
       <div class= "freelas">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">passo a passo</h2>
-            <h3 class="section-subheading text-muted">Entenda o processo de produção de um projeto</h3>
+            <h2 class="section-heading text-uppercase divText">passo a passo</h2>
+            <h3 class="section-subheading divText">Entenda o processo de produção de um projeto</h3>
           </div>
         </div>
         <div class="row">
@@ -201,9 +208,9 @@
                   <img class="rounded-circle img-fluid" src="img/about/process1.svg" alt="">
                 </div>
                 <div class="timeline-panel">
-                  <div class="timeline-heading">
+                  <div class="timeline-heading"><br><br>
                     <h4>PRIMEIRO PASSO</h4>
-                    <h4 class="subheading">Coloque suas ideias na mesa</h4>
+                    <h4 class="subheading divText">Coloque suas ideias na mesa</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted"></p>
@@ -215,9 +222,9 @@
                   <img class="rounded-circle img-fluid" src="img/about/process2.svg" alt="">
                 </div>
                 <div class="timeline-panel">
-                  <div class="timeline-heading">
+                  <div class="timeline-heading"><br><br>
                     <h4>SEGUNDO PASSO</h4>
-                    <h4 class="subheading">Publicando seu projeto</h4>
+                    <h4 class="subheading divText">Publicando seu projeto</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted"></p>
@@ -230,8 +237,8 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>DESENVOLVIMENTO</h4>
-                    <h4 class="subheading">Aqui seu projeto ganha os primeiros contonos</h4>
+                    <h4 class="divText">DESENVOLVIMENTO</h4>
+                    <h4 class="subheading divText">Aqui seu projeto ganha os primeiros contonos</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted"></p>
@@ -243,9 +250,9 @@
                   <img class="rounded-circle img-fluid" src="img/about/process4.svg" alt="">
                 </div>
                 <div class="timeline-panel">
-                  <div class="timeline-heading">
+                  <div class="timeline-heading"><br><br>
                     <h4>DEPLOY</h4>
-                    <h4 class="subheading">Momento de fazer os ajustes finais e por a cara no mundo</h4>
+                    <h4 class="subheading divText">Momento de fazer os ajustes finais e por a cara no mundo</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted"></p>
@@ -254,7 +261,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                    <h4>Venha
+                      <h4>Venha
                     <br>para
                 <br>Skillancers!</h4>
                 </div>
@@ -266,12 +273,12 @@
     </section>
 
     <!-- equipe -->
-    <section class="bg-light" id="team">
+    <section  id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Skillancers</h2>
-            <h3 class="section-subheading text-muted">Tudo começou na Digital House</h3>
+            <h2 class="section-heading text-uppercase divText">Skillancers</h2>
+            <h3 class="section-subheading text-muted divText">Tudo começou na Digital House</h3>
           </div>
         </div>
         <div class="row">
@@ -373,13 +380,6 @@
           </div>
       </div>
         </div>
-
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- parcerias -->

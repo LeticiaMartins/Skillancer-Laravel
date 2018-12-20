@@ -64,8 +64,9 @@ if($('#form').length > 0){
 
 
 
-// window.onload = function (){
-
+window.onload = function (){
+ var fundo = document.getElementById('light-theme');
+ fundo.addEventListener('click', runFunction);
 // var fazul = document.getElementById('fundoazul');
 // fazul.addEventListener('click', runFunction );
 
@@ -80,15 +81,25 @@ if($('#form').length > 0){
 
 
 
-// function runFunction(e){
+function runFunction(e){
 
-//     console.log( 'event type:' +e.type);
-//     document.body.style.backgroundColor = "lightblue";
-//     document.getElementById('mainNav1').style.backgroundColor = "lightblue";
-//     document.getElementById('cores').style.backgroundColor = "lightblue";
-//     document.getElementById('portfolio').style.backgroundColor = "lightblue";
-//     document.getElementById('team').style.backgroundColor = "lightblue";
-// }
+    console.log( 'event type:' +e.type);
+    // document.getElementById('mainNav1').style.backgroundColor = "lightblue";
+    // document.getElementById('cores').style.backgroundColor = "lightblue";
+    document.getElementById('portfolio').style.backgroundColor = "#435058";
+    document.querySelector('.tema').setAttribute('style', 'background-color:#242a2d !important');
+    document.getElementById('services').style.backgroundColor = "#435058c2";
+    document.getElementById('about').style.backgroundColor = "#435058db";
+    document.getElementById('team').style.backgroundColor = "#435058c2";
+    
+
+  var  mudaTexto =  document.querySelectorAll('.divText');
+
+    for (let index = 0; index < mudaTexto.length; index++) {
+        mudaTexto[index].setAttribute('style', 'color:white !important');
+        
+    }
+}
 
 
 
@@ -155,7 +166,7 @@ if($('#form').length > 0){
 // function sair(e){
 //     alerta.style.display = 'none';
 // }
-// }
+}
 
 
 
