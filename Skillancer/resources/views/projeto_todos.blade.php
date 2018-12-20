@@ -9,7 +9,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">projetos</h2>
+            <h2 class="section-heading text-uppercase divText">projetos</h2>
             <h4 class="section-subheading text-muted"></h4>
           </div>
         </div>
