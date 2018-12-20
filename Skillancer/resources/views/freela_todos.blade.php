@@ -8,7 +8,7 @@
     h3{
     color:#212529;
     }
-    
+
     </style>
 
     <section id="portfolio">
@@ -26,7 +26,7 @@
               <form action=" " method="post">
                 <div class="container">
                   <input type="search" id="busca" name="q">
-                  <button type="submit">Buscar</button>
+                  <button type="submit" class="btn btn-primary buscar">Buscar</button>
                 </div>
               </form>
             </div>

@@ -23,7 +23,7 @@
                 <div class="container">
                   <input type="text" id="busca" name="busca" />
 
-                  <button type="submit">Buscar</button>
+                  <button type="submit" class="btn btn-primary buscar">Buscar</button>
                   <div id="output"></div>
                 </div>
               </form>

@@ -21,7 +21,7 @@
                 <label for="busca">Buscar</label>
                 <div class="container">
                   <input type="search" id="busca" name="q">
-                  <button type="submit">OK</button>
+                  <button type="submit" class="btn btn-primary buscar">OK</button>
                 </div>
               </form>
             </div>
